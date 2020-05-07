@@ -13151,7 +13151,7 @@ VI. <a href="#conclusions">Extras &amp; Concluding</a></p>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[151]:</div>
+<div class="prompt input_prompt">In&nbsp;[133]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
@@ -13181,7 +13181,7 @@ VI. <a href="#conclusions">Extras &amp; Concluding</a></p>
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[151]:</div>
+    <div class="prompt output_prompt">Out[133]:</div>
 
 
 
@@ -13253,7 +13253,95 @@ VI. <a href="#conclusions">Extras &amp; Concluding</a></p>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[22]:</div>
+<div class="prompt input_prompt">In&nbsp;[134]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">df</span><span class="o">.</span><span class="n">loc</span><span class="p">[</span><span class="n">df</span><span class="p">[</span><span class="s1">&#39;article_id&#39;</span><span class="p">]</span> <span class="o">==</span> <span class="mi">4</span><span class="p">,]</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt output_prompt">Out[134]:</div>
+
+
+
+<div class="output_html rendered_html output_subarea output_execute_result">
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>article_id</th>
+      <th>title</th>
+      <th>email</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>18856</th>
+      <td>4.0</td>
+      <td>analyze ny restaurant data using spark in dsx</td>
+      <td>2c984b55fa072cac799ee61ad3d554fc4de4afbd</td>
+    </tr>
+    <tr>
+      <th>23372</th>
+      <td>4.0</td>
+      <td>analyze ny restaurant data using spark in dsx</td>
+      <td>01c1d21cdafc17e1fea3f0b5aec586aed932703b</td>
+    </tr>
+    <tr>
+      <th>23608</th>
+      <td>4.0</td>
+      <td>analyze ny restaurant data using spark in dsx</td>
+      <td>2c9018ac0bf581b621c4340b360b0fb86e89fa7e</td>
+    </tr>
+    <tr>
+      <th>26140</th>
+      <td>4.0</td>
+      <td>analyze ny restaurant data using spark in dsx</td>
+      <td>1b71ab21f3d9d18e7c49f9aebd0b71839c0bfee2</td>
+    </tr>
+    <tr>
+      <th>27734</th>
+      <td>4.0</td>
+      <td>analyze ny restaurant data using spark in dsx</td>
+      <td>765bc01e49103523a684d4f3ec1a959971e8da28</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[135]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Show df_content to get an idea of the data</span>
@@ -13270,7 +13358,7 @@ VI. <a href="#conclusions">Extras &amp; Concluding</a></p>
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[22]:</div>
+    <div class="prompt output_prompt">Out[135]:</div>
 
 
 
@@ -13363,7 +13451,7 @@ VI. <a href="#conclusions">Extras &amp; Concluding</a></p>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[42]:</div>
+<div class="prompt input_prompt">In&nbsp;[136]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">df</span><span class="o">.</span><span class="n">groupby</span><span class="p">(</span><span class="s2">&quot;title&quot;</span><span class="p">)</span><span class="o">.</span><span class="n">count</span><span class="p">()</span><span class="o">.</span><span class="n">head</span><span class="p">(</span><span class="mi">10</span><span class="p">)</span>
@@ -13379,7 +13467,7 @@ VI. <a href="#conclusions">Extras &amp; Concluding</a></p>
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[42]:</div>
+    <div class="prompt output_prompt">Out[136]:</div>
 
 
 
@@ -13475,7 +13563,7 @@ VI. <a href="#conclusions">Extras &amp; Concluding</a></p>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[23]:</div>
+<div class="prompt input_prompt">In&nbsp;[137]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">df</span><span class="o">.</span><span class="n">groupby</span><span class="p">(</span><span class="s2">&quot;email&quot;</span><span class="p">)</span><span class="o">.</span><span class="n">count</span><span class="p">()</span><span class="o">.</span><span class="n">head</span><span class="p">(</span><span class="mi">10</span><span class="p">)</span>
@@ -13491,7 +13579,7 @@ VI. <a href="#conclusions">Extras &amp; Concluding</a></p>
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[23]:</div>
+    <div class="prompt output_prompt">Out[137]:</div>
 
 
 
@@ -13587,7 +13675,7 @@ VI. <a href="#conclusions">Extras &amp; Concluding</a></p>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[24]:</div>
+<div class="prompt input_prompt">In&nbsp;[138]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">df</span><span class="o">.</span><span class="n">groupby</span><span class="p">(</span><span class="s2">&quot;email&quot;</span><span class="p">)</span><span class="o">.</span><span class="n">count</span><span class="p">()</span><span class="o">.</span><span class="n">plot</span><span class="p">()</span>
@@ -13603,13 +13691,13 @@ VI. <a href="#conclusions">Extras &amp; Concluding</a></p>
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[24]:</div>
+    <div class="prompt output_prompt">Out[138]:</div>
 
 
 
 
 <div class="output_text output_subarea output_execute_result">
-<pre>&lt;matplotlib.axes._subplots.AxesSubplot at 0x7fd0543d3320&gt;</pre>
+<pre>&lt;matplotlib.axes._subplots.AxesSubplot at 0x7fbd4b66de10&gt;</pre>
 </div>
 
 </div>
@@ -13635,7 +13723,7 @@ VI. <a href="#conclusions">Extras &amp; Concluding</a></p>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[25]:</div>
+<div class="prompt input_prompt">In&nbsp;[139]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">df</span><span class="o">.</span><span class="n">groupby</span><span class="p">(</span><span class="s2">&quot;email&quot;</span><span class="p">)</span><span class="o">.</span><span class="n">count</span><span class="p">()[</span><span class="s1">&#39;article_id&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">hist</span><span class="p">()</span>
@@ -13674,7 +13762,7 @@ VI. <a href="#conclusions">Extras &amp; Concluding</a></p>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[26]:</div>
+<div class="prompt input_prompt">In&nbsp;[140]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">df</span><span class="o">.</span><span class="n">groupby</span><span class="p">(</span><span class="s2">&quot;email&quot;</span><span class="p">)</span><span class="o">.</span><span class="n">count</span><span class="p">()</span><span class="o">.</span><span class="n">describe</span><span class="p">()</span>
@@ -13690,7 +13778,7 @@ VI. <a href="#conclusions">Extras &amp; Concluding</a></p>
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[26]:</div>
+    <div class="prompt output_prompt">Out[140]:</div>
 
 
 
@@ -13771,7 +13859,7 @@ VI. <a href="#conclusions">Extras &amp; Concluding</a></p>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[27]:</div>
+<div class="prompt input_prompt">In&nbsp;[141]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">df</span><span class="o">.</span><span class="n">groupby</span><span class="p">(</span><span class="s2">&quot;email&quot;</span><span class="p">)</span><span class="o">.</span><span class="n">count</span><span class="p">()[</span><span class="s1">&#39;article_id&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">describe</span><span class="p">()[</span><span class="s1">&#39;50%&#39;</span><span class="p">]</span>
@@ -13787,7 +13875,7 @@ VI. <a href="#conclusions">Extras &amp; Concluding</a></p>
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[27]:</div>
+    <div class="prompt output_prompt">Out[141]:</div>
 
 
 
@@ -13804,7 +13892,7 @@ VI. <a href="#conclusions">Extras &amp; Concluding</a></p>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[28]:</div>
+<div class="prompt input_prompt">In&nbsp;[142]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">df</span><span class="o">.</span><span class="n">groupby</span><span class="p">(</span><span class="s2">&quot;email&quot;</span><span class="p">)</span><span class="o">.</span><span class="n">count</span><span class="p">()[</span><span class="s1">&#39;article_id&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">describe</span><span class="p">()[</span><span class="s1">&#39;max&#39;</span><span class="p">]</span>
@@ -13820,7 +13908,7 @@ VI. <a href="#conclusions">Extras &amp; Concluding</a></p>
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[28]:</div>
+    <div class="prompt output_prompt">Out[142]:</div>
 
 
 
@@ -13837,7 +13925,7 @@ VI. <a href="#conclusions">Extras &amp; Concluding</a></p>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[29]:</div>
+<div class="prompt input_prompt">In&nbsp;[143]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Fill in the median and maximum number of user_article interactios below</span>
@@ -13861,7 +13949,7 @@ VI. <a href="#conclusions">Extras &amp; Concluding</a></p>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[30]:</div>
+<div class="prompt input_prompt">In&nbsp;[144]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Find and explore duplicate articles</span>
@@ -13890,7 +13978,7 @@ VI. <a href="#conclusions">Extras &amp; Concluding</a></p>
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[30]:</div>
+    <div class="prompt output_prompt">Out[144]:</div>
 
 
 
@@ -13974,7 +14062,7 @@ VI. <a href="#conclusions">Extras &amp; Concluding</a></p>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[31]:</div>
+<div class="prompt input_prompt">In&nbsp;[145]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Remove any rows that have the same article_id - only keep the first</span>
@@ -13992,7 +14080,7 @@ VI. <a href="#conclusions">Extras &amp; Concluding</a></p>
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[31]:</div>
+    <div class="prompt output_prompt">Out[145]:</div>
 
 
 
@@ -14537,7 +14625,7 @@ VI. <a href="#conclusions">Extras &amp; Concluding</a></p>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[34]:</div>
+<div class="prompt input_prompt">In&nbsp;[146]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">df</span><span class="p">[</span><span class="s1">&#39;article_id&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">value_counts</span><span class="p">()</span><span class="o">.</span><span class="n">describe</span><span class="p">()</span>
@@ -14553,7 +14641,7 @@ VI. <a href="#conclusions">Extras &amp; Concluding</a></p>
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[34]:</div>
+    <div class="prompt output_prompt">Out[146]:</div>
 
 
 
@@ -14578,7 +14666,7 @@ Name: article_id, dtype: float64</pre>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[38]:</div>
+<div class="prompt input_prompt">In&nbsp;[147]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">df</span><span class="p">[</span><span class="s1">&#39;email&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">value_counts</span><span class="p">()</span><span class="o">.</span><span class="n">describe</span><span class="p">()</span>
@@ -14594,7 +14682,7 @@ Name: article_id, dtype: float64</pre>
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[38]:</div>
+    <div class="prompt output_prompt">Out[147]:</div>
 
 
 
@@ -14619,7 +14707,7 @@ Name: email, dtype: float64</pre>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[39]:</div>
+<div class="prompt input_prompt">In&nbsp;[148]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># a. The number of unique articles that have an interaction with a user.</span>
@@ -14661,7 +14749,7 @@ Name: email, dtype: float64</pre>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[40]:</div>
+<div class="prompt input_prompt">In&nbsp;[149]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">unique_articles</span> <span class="o">=</span> <span class="n">df</span><span class="p">[</span><span class="s1">&#39;article_id&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">value_counts</span><span class="p">()</span><span class="o">.</span><span class="n">describe</span><span class="p">()[</span><span class="s1">&#39;count&#39;</span><span class="p">]</span> <span class="c1"># The number of unique articles that have at least one interaction</span>
@@ -14685,7 +14773,7 @@ Name: email, dtype: float64</pre>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[73]:</div>
+<div class="prompt input_prompt">In&nbsp;[150]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">df</span><span class="p">[</span><span class="s1">&#39;article_id&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">value_counts</span><span class="p">()</span><span class="o">.</span><span class="n">head</span><span class="p">(</span><span class="mi">4</span><span class="p">)</span>
@@ -14701,7 +14789,7 @@ Name: email, dtype: float64</pre>
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[73]:</div>
+    <div class="prompt output_prompt">Out[150]:</div>
 
 
 
@@ -14722,7 +14810,7 @@ Name: article_id, dtype: int64</pre>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[74]:</div>
+<div class="prompt input_prompt">In&nbsp;[151]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">most_viewed_article_id</span> <span class="o">=</span> <span class="s1">&#39;1429.0&#39;</span>     <span class="c1"># The most viewed article in the dataset as a string with one value following the decimal </span>
@@ -14736,7 +14824,7 @@ Name: article_id, dtype: int64</pre>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[75]:</div>
+<div class="prompt input_prompt">In&nbsp;[152]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1">## No need to change the code here - this will be helpful for later parts of the notebook</span>
@@ -14773,7 +14861,7 @@ Name: article_id, dtype: int64</pre>
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[75]:</div>
+    <div class="prompt output_prompt">Out[152]:</div>
 
 
 
@@ -14845,7 +14933,7 @@ Name: article_id, dtype: int64</pre>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[76]:</div>
+<div class="prompt input_prompt">In&nbsp;[153]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1">## If you stored all your results in the variable names above, </span>
@@ -14900,7 +14988,7 @@ Name: article_id, dtype: int64</pre>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[79]:</div>
+<div class="prompt input_prompt">In&nbsp;[154]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">get_top_articles</span><span class="p">(</span><span class="n">n</span><span class="p">,</span> <span class="n">df</span><span class="o">=</span><span class="n">df</span><span class="p">):</span>
@@ -14939,7 +15027,7 @@ Name: article_id, dtype: int64</pre>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[80]:</div>
+<div class="prompt input_prompt">In&nbsp;[155]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="n">get_top_articles</span><span class="p">(</span><span class="mi">10</span><span class="p">))</span>
@@ -14960,7 +15048,7 @@ Name: article_id, dtype: int64</pre>
 
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>[&#39;use xgboost, scikit-learn &amp; ibm watson machine learning apis&#39;, &#39;apache spark lab, part 1: basic concepts&#39;, &#39;healthcare python streaming application demo&#39;, &#39;gosales transactions for logistic regression model&#39;, &#39;insights from new york car accident reports&#39;, &#39;use deep learning for image classification&#39;, &#39;predicting churn with the spss random tree algorithm&#39;, &#39;finding optimal locations of new store using decision optimization&#39;, &#39;analyze energy consumption in buildings&#39;, &#39;visualize car data with brunel&#39;]
+<pre>[&#39;analyze energy consumption in buildings&#39;, &#39;apache spark lab, part 1: basic concepts&#39;, &#39;visualize car data with brunel&#39;, &#39;insights from new york car accident reports&#39;, &#39;gosales transactions for logistic regression model&#39;, &#39;healthcare python streaming application demo&#39;, &#39;use xgboost, scikit-learn &amp; ibm watson machine learning apis&#39;, &#39;finding optimal locations of new store using decision optimization&#39;, &#39;use deep learning for image classification&#39;, &#39;predicting churn with the spss random tree algorithm&#39;]
 [&#39;1429.0&#39;, &#39;1330.0&#39;, &#39;1431.0&#39;, &#39;1427.0&#39;, &#39;1364.0&#39;, &#39;1314.0&#39;, &#39;1293.0&#39;, &#39;1170.0&#39;, &#39;1162.0&#39;, &#39;1304.0&#39;]
 </pre>
 </div>
@@ -14972,7 +15060,7 @@ Name: article_id, dtype: int64</pre>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[81]:</div>
+<div class="prompt input_prompt">In&nbsp;[156]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Test your function by returning the top 5, 10, and 20 articles</span>
@@ -15032,7 +15120,51 @@ Your top_20 looks like the solution list! Nice job.
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[82]:</div>
+<div class="prompt input_prompt">In&nbsp;[157]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">df</span><span class="o">.</span><span class="n">groupby</span><span class="p">([</span><span class="s1">&#39;user_id&#39;</span><span class="p">,</span> <span class="s1">&#39;article_id&#39;</span><span class="p">])[</span><span class="s1">&#39;title&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">count</span><span class="p">()</span><span class="o">.</span><span class="n">head</span><span class="p">(</span><span class="mi">10</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt output_prompt">Out[157]:</div>
+
+
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>user_id  article_id
+1        43.0          1
+         109.0         1
+         151.0         1
+         268.0         1
+         310.0         2
+         329.0         1
+         346.0         1
+         390.0         1
+         494.0         1
+         525.0         1
+Name: title, dtype: int64</pre>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[158]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># create the user-article matrix with 1&#39;s and 0&#39;s</span>
@@ -15064,7 +15196,228 @@ Your top_20 looks like the solution list! Nice job.
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[83]:</div>
+<div class="prompt input_prompt">In&nbsp;[159]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">user_item</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt output_prompt">Out[159]:</div>
+
+
+
+<div class="output_html rendered_html output_subarea output_execute_result">
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th>article_id</th>
+      <th>0.0</th>
+      <th>2.0</th>
+      <th>4.0</th>
+      <th>8.0</th>
+      <th>9.0</th>
+      <th>12.0</th>
+      <th>14.0</th>
+      <th>15.0</th>
+      <th>16.0</th>
+      <th>18.0</th>
+      <th>...</th>
+      <th>1434.0</th>
+      <th>1435.0</th>
+      <th>1436.0</th>
+      <th>1437.0</th>
+      <th>1439.0</th>
+      <th>1440.0</th>
+      <th>1441.0</th>
+      <th>1442.0</th>
+      <th>1443.0</th>
+      <th>1444.0</th>
+    </tr>
+    <tr>
+      <th>user_id</th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>1</th>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>...</td>
+      <td>0</td>
+      <td>0</td>
+      <td>1</td>
+      <td>0</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>...</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>...</td>
+      <td>0</td>
+      <td>0</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>...</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>5</th>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>...</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+  </tbody>
+</table>
+<p>5 rows × 714 columns</p>
+</div>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[160]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1">## Tests: You should just need to run this cell.  Don&#39;t change the code.</span>
@@ -15108,7 +15461,190 @@ Your top_20 looks like the solution list! Nice job.
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[84]:</div>
+<div class="prompt input_prompt">In&nbsp;[161]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">user_item</span><span class="o">.</span><span class="n">loc</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span><span class="o">.</span><span class="n">head</span><span class="p">(</span><span class="mi">10</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt output_prompt">Out[161]:</div>
+
+
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>article_id
+0.0     0
+2.0     0
+4.0     0
+8.0     0
+9.0     0
+12.0    0
+14.0    0
+15.0    0
+16.0    0
+18.0    0
+Name: 1, dtype: int64</pre>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[162]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">user_item</span><span class="o">.</span><span class="n">dot</span><span class="p">(</span><span class="n">user_item</span><span class="o">.</span><span class="n">loc</span><span class="p">[</span><span class="mi">1</span><span class="p">])</span><span class="o">.</span><span class="n">head</span><span class="p">(</span><span class="mi">10</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt output_prompt">Out[162]:</div>
+
+
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>user_id
+1     36
+2      2
+3      6
+4      3
+5      0
+6      4
+7      1
+8      6
+9      4
+10     7
+dtype: int64</pre>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[163]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">user_item</span><span class="o">.</span><span class="n">dot</span><span class="p">(</span><span class="n">user_item</span><span class="o">.</span><span class="n">loc</span><span class="p">[</span><span class="mi">1</span><span class="p">])</span><span class="o">.</span><span class="n">sort_values</span><span class="p">(</span><span class="n">ascending</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt output_prompt">Out[163]:</div>
+
+
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>user_id
+1       36
+3933    35
+23      17
+3782    17
+203     15
+4459    15
+131     14
+3870    14
+46      13
+4201    13
+5041    12
+49      12
+3697    12
+395     12
+3910    11
+322     11
+3622    11
+242     11
+4642    10
+290     10
+2982    10
+912     10
+3540    10
+98      10
+754     10
+3764    10
+256      9
+52       9
+268      9
+40       9
+        ..
+2906     0
+2909     0
+2954     0
+2910     0
+2952     0
+2951     0
+2950     0
+2947     0
+2945     0
+2944     0
+2943     0
+2942     0
+2939     0
+2938     0
+2937     0
+2936     0
+2933     0
+2931     0
+2930     0
+2929     0
+2928     0
+2927     0
+2923     0
+2922     0
+2921     0
+2920     0
+2918     0
+2916     0
+2911     0
+2575     0
+Length: 5149, dtype: int64</pre>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[164]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">find_similar_users</span><span class="p">(</span><span class="n">user_id</span><span class="p">,</span> <span class="n">user_item</span><span class="o">=</span><span class="n">user_item</span><span class="p">):</span>
@@ -15148,7 +15684,7 @@ Your top_20 looks like the solution list! Nice job.
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[85]:</div>
+<div class="prompt input_prompt">In&nbsp;[165]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Do a spot check of your function</span>
@@ -15192,7 +15728,113 @@ The 3 most similar users to user 46 are: [4201, 23, 3782]
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[86]:</div>
+<div class="prompt input_prompt">In&nbsp;[166]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="n">user_user_recs</span><span class="p">(</span><span class="mi">20</span><span class="p">,</span> <span class="mi">10</span><span class="p">))</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">user_item</span><span class="o">.</span><span class="n">dot</span><span class="p">(</span><span class="n">user_item</span><span class="o">.</span><span class="n">loc</span><span class="p">[</span><span class="mi">20</span><span class="p">])</span><span class="o">.</span><span class="n">sort_values</span><span class="p">(</span><span class="n">ascending</span><span class="o">=</span><span class="kc">False</span><span class="p">)[:</span><span class="mi">10</span><span class="p">])</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="n">find_similar_users</span><span class="p">(</span><span class="mi">20</span><span class="p">)[:</span><span class="mi">10</span><span class="p">])</span>
+
+<span class="c1"># get_user_articles(1)</span>
+<span class="c1"># user_seen_articles, _ = get_user_articles(user_id, user_item)</span>
+<span class="c1"># user_seen_articles = set(user_seen_articles)</span>
+
+<span class="n">article_ids</span> <span class="o">=</span> <span class="n">user_item</span><span class="o">.</span><span class="n">loc</span><span class="p">[</span><span class="mi">20</span><span class="p">]</span>
+<span class="n">article_ids</span> <span class="o">=</span> <span class="p">[</span><span class="nb">str</span><span class="p">(</span><span class="n">aid</span><span class="p">)</span> <span class="k">for</span> <span class="n">aid</span> <span class="ow">in</span> <span class="n">article_ids</span><span class="p">[</span><span class="n">article_ids</span> <span class="o">==</span> <span class="mi">1</span><span class="p">]</span><span class="o">.</span><span class="n">index</span><span class="p">]</span>
+<span class="n">article_ids</span>
+<span class="c1"># article_names = get_article_names(article_ids)    </span>
+<span class="c1"># return article_ids, article_names # return the ids and names</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>[&#39;109.0&#39;, &#39;1162.0&#39;, &#39;1437.0&#39;, &#39;1386.0&#39;, &#39;313.0&#39;, &#39;112.0&#39;, &#39;1172.0&#39;, &#39;1351.0&#39;, &#39;1276.0&#39;, &#39;1364.0&#39;]
+user_id
+20      3
+40      2
+113     2
+4932    2
+5123    2
+419     2
+196     2
+2164    2
+2354    2
+4883    2
+dtype: int64
+[40, 113, 4932, 5123, 419, 196, 2164, 2354, 4883, 204]
+</pre>
+</div>
+</div>
+
+<div class="output_area">
+
+    <div class="prompt output_prompt">Out[166]:</div>
+
+
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>[&#39;232.0&#39;, &#39;844.0&#39;, &#39;1320.0&#39;]</pre>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[167]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># article_ids</span>
+<span class="nb">list</span><span class="p">(</span><span class="nb">set</span><span class="p">(</span><span class="n">df</span><span class="p">[</span><span class="n">df</span><span class="p">[</span><span class="s1">&#39;article_id&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">isin</span><span class="p">(</span><span class="n">article_ids</span><span class="p">)][</span><span class="s1">&#39;title&#39;</span><span class="p">]))</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt output_prompt">Out[167]:</div>
+
+
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>[&#39;self-service data preparation with ibm data refinery&#39;,
+ &#39;housing (2015): united states demographic measures&#39;,
+ &#39;use the cloudant-spark connector in python notebook&#39;]</pre>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[168]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">get_article_names</span><span class="p">(</span><span class="n">article_ids</span><span class="p">,</span> <span class="n">df</span><span class="o">=</span><span class="n">df</span><span class="p">):</span>
@@ -15253,10 +15895,26 @@ The 3 most similar users to user 46 are: [4201, 23, 3782]
 <span class="sd">    and ends exceeding m, the last items are chosen arbitrarily</span>
 <span class="sd">    </span>
 <span class="sd">    &#39;&#39;&#39;</span>
-    <span class="c1"># Your code here</span>
-    <span class="n">user_ids</span> <span class="o">=</span> <span class="n">find_similar_users</span><span class="p">(</span><span class="n">user_id</span><span class="p">)</span>
-    <span class="n">recs</span> <span class="o">=</span> <span class="n">df</span><span class="p">[</span><span class="n">df</span><span class="p">[</span><span class="s1">&#39;user_id&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">isin</span><span class="p">(</span><span class="n">user_ids</span><span class="p">)][</span><span class="s1">&#39;article_id&#39;</span><span class="p">]</span>
-    <span class="n">recs</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="nb">set</span><span class="p">(</span><span class="n">recs</span><span class="p">))</span>    
+<span class="c1"># Your code here</span>
+<span class="c1">#     user_ids = find_similar_users(user_id)</span>
+<span class="c1">#     recs = df[df[&#39;user_id&#39;].isin(user_ids)][&#39;article_id&#39;]</span>
+<span class="c1">#     recs = list(set(recs))    </span>
+
+    <span class="n">most_similar_users</span> <span class="o">=</span> <span class="n">find_similar_users</span><span class="p">(</span><span class="n">user_id</span><span class="p">,</span> <span class="n">user_item</span><span class="p">)</span>
+
+    <span class="n">recs</span> <span class="o">=</span> <span class="p">[]</span>
+
+    <span class="n">user_seen_articles</span><span class="p">,</span> <span class="n">_</span> <span class="o">=</span> <span class="n">get_user_articles</span><span class="p">(</span><span class="n">user_id</span><span class="p">,</span> <span class="n">user_item</span><span class="p">)</span>
+    <span class="n">user_seen_articles</span> <span class="o">=</span> <span class="nb">set</span><span class="p">(</span><span class="n">user_seen_articles</span><span class="p">)</span>
+
+    <span class="k">for</span> <span class="n">user</span> <span class="ow">in</span> <span class="n">most_similar_users</span><span class="p">:</span>
+        <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">recs</span><span class="p">)</span> <span class="o">&lt;</span> <span class="n">m</span><span class="p">:</span>
+            <span class="n">article_ids</span> <span class="o">=</span> <span class="nb">set</span><span class="p">(</span><span class="n">get_user_articles</span><span class="p">(</span><span class="n">user</span><span class="p">,</span> <span class="n">user_item</span><span class="p">)[</span><span class="mi">0</span><span class="p">])</span>
+            <span class="n">recommended_ids</span> <span class="o">=</span> <span class="n">article_ids</span><span class="o">.</span><span class="n">difference</span><span class="p">(</span><span class="n">user_seen_articles</span><span class="p">)</span>
+            <span class="n">req_recs</span> <span class="o">=</span> <span class="n">m</span> <span class="o">-</span> <span class="nb">len</span><span class="p">(</span><span class="n">recs</span><span class="p">)</span>
+            <span class="n">recommended_ids</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="n">recommended_ids</span><span class="p">)[:</span><span class="n">req_recs</span><span class="p">]</span>
+            <span class="n">recs</span><span class="o">.</span><span class="n">extend</span><span class="p">(</span><span class="n">recommended_ids</span><span class="p">)</span>
+            <span class="n">user_seen_articles</span> <span class="o">=</span> <span class="n">user_seen_articles</span><span class="o">.</span><span class="n">union</span><span class="p">(</span><span class="n">recommended_ids</span><span class="p">)</span>
     <span class="k">return</span> <span class="n">recs</span> <span class="c1"># return your recommendations for this user_id    </span>
 </pre></div>
 
@@ -15267,7 +15925,7 @@ The 3 most similar users to user 46 are: [4201, 23, 3782]
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[87]:</div>
+<div class="prompt input_prompt">In&nbsp;[169]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Check Results</span>
@@ -15284,726 +15942,22 @@ The 3 most similar users to user 46 are: [4201, 23, 3782]
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[87]:</div>
+    <div class="prompt output_prompt">Out[169]:</div>
 
 
 
 
 <div class="output_text output_subarea output_execute_result">
-<pre>[&#39;airbnb data for analytics: venice listings&#39;,
- &#39;from scikit-learn model to cloud with wml client&#39;,
- &#39;country statistics: reserves of foreign exchange and gold&#39;,
- &#39;breast cancer detection with xgboost, wml and scikit&#39;,
- &#39;excel files: loading from object storage — python&#39;,
- &#39;10 must attend data science, ml and ai conferences in 2018&#39;,
- &#39;united states demographic measures: population and age&#39;,
- &#39;shiny: a data scientist’s best friend&#39;,
- &#39;0 to life-changing app: new apache systemml api on spark shell&#39;,
- &#39;you could be looking at it all wrong&#39;,
- &#39;movie recommender system with spark machine learning&#39;,
- &#39;enhanced color mapping&#39;,
- &#39;analyze open data sets with spark &amp; pixiedust&#39;,
- &#39;developing for the ibm streaming analytics service&#39;,
- &#39;data visualization: the importance of excluding unnecessary details&#39;,
- &#39;missing data conundrum: exploration and imputation techniques&#39;,
- &#39;airbnb data for analytics: portland reviews&#39;,
- &#39;uci ml repository: chronic kidney disease data set&#39;,
- &#39;dry bulb temperature, by country, station and year&#39;,
- &#39;working with notebooks in dsx&#39;,
- &#39;dimensionality reduction algorithms&#39;,
- &#39;airbnb data for analytics: washington d.c. listings&#39;,
- &#39;working with db2 warehouse on cloud in data science experience&#39;,
- &#39;airbnb data for analytics: paris reviews&#39;,
- &#39;brunel in jupyter&#39;,
- &#39;awesome deep learning papers&#39;,
- &#39;airbnb data for analytics: portland listings&#39;,
- &#39;ensemble learning to improve machine learning results&#39;,
- &#39;visualize the 1854 london cholera outbreak&#39;,
- &#39;this week in data science (january 17, 2017)&#39;,
- &#39;working with sqlite databases using python and pandas&#39;,
- &#34;feature importance and why it&#39;s important&#34;,
- &#39;analyze starcraft ii replays with jupyter notebooks&#39;,
- &#39;the random forest algorithm &#39;,
- &#39;simple linear regression? do it the bayesian way&#39;,
- &#39;time series anomaly detection algorithms – stats and bots&#39;,
- &#39;ml optimization using cognitive assistant&#39;,
- &#39;uci: poker hand - testing data set&#39;,
- &#39;use apache systemml and spark for machine learning&#39;,
- &#39;brunel 2.0 preview&#39;,
- &#39;the data science process&#39;,
- &#39;python if statements explained (python for data science basics #4)&#39;,
- &#39;easy json loading and social sharing in dsx notebooks&#39;,
- &#39;calculate moving averages on real time data with streams designer&#39;,
- &#39;what caused the challenger disaster?&#39;,
- &#39;wages&#39;,
- &#39;how the circle line rogue train was caught with data&#39;,
- &#39;xml2 1.0.0&#39;,
- &#39;tidy up your jupyter notebooks with scripts&#39;,
- &#39;generalization in deep learning&#39;,
- &#39;20405    how to tame the valley — hessian-free hacks fo...\nName: title, dtype: object&#39;,
- &#39;co2 emissions (metric tons per capita) by country&#39;,
- &#39;an introduction to scientific python (and a bit of the maths behind it) – numpy&#39;,
- &#39;using the maker palette in the ibm data science experience&#39;,
- &#39;household consumption expenditure&#39;,
- &#39;accelerate your workflow with dsx&#39;,
- &#39;pseudo-labeling a simple semi-supervised learning method&#39;,
- &#39;total population by country&#39;,
- &#39;analyze db2 warehouse on cloud data in rstudio in dsx&#39;,
- &#39;country statistics: market value of publicly traded shares&#39;,
- &#39;getting started with graphframes in apache spark™&#39;,
- &#39;creating the data science experience&#39;,
- &#39;airbnb data for analytics: vienna reviews&#39;,
- &#39;web picks by dataminingapps&#39;,
- &#39;3 scenarios for machine learning on multicloud&#39;,
- &#39;generative adversarial networks (gans)&#39;,
- &#39;htmlwidgets: javascript data visualization for r&#39;,
- &#39;occupation (2015): united states demographic measures&#39;,
- &#39;data science of variable selection&#39;,
- &#39;data structures related to machine learning algorithms&#39;,
- &#39;airbnb data for analytics: barcelona listings&#39;,
- &#39;5 practical use cases of social network analytics: going beyond facebook and twitter&#39;,
- &#39;apple, ibm add machine learning to partnership with watson-core ml coupling&#39;,
- &#39;country statistics: roadways&#39;,
- &#39;10 tips on using jupyter notebook&#39;,
- &#39;spark-based machine learning tools for capturing word meanings&#39;,
- &#39;how to choose a project to practice data science&#39;,
- &#39;airbnb data for analytics: san francisco listings&#39;,
- &#39;this week in data science (february 7, 2017)&#39;,
- &#39;502    forgetting the past to learn the future: long ...\nName: title, dtype: object&#39;,
- &#39;1357    what i learned implementing a classifier from ...\nName: title, dtype: object&#39;,
- &#39;10 data science podcasts you need to be listening to right now&#39;,
- &#39;airbnb data for analytics: chicago listings&#39;,
- &#39;airbnb data for analytics: antwerp listings&#39;,
- &#39;airbnb data for analytics: nashville calendar&#39;,
- &#39;the art of side effects: curing apache spark streaming’s amnesia (part 1/2)&#39;,
- &#39;how to ease the strain as your data volumes rise&#39;,
- &#39;what is systemml? why is it relevant to you?&#39;,
- &#39;discover, catalog and govern data with ibm data catalog&#39;,
- &#39;working with ibm cloud object storage in r&#39;,
- &#39;data model with streaming analytics and python&#39;,
- &#39;how open api economy accelerates the growth of big data and analytics&#39;,
- &#39;the nurse assignment problem&#39;,
- &#39;deploy your python model as a restful api&#39;,
- &#39;airbnb data for analytics: vancouver listings&#39;,
- &#39;artificial intelligence, ethically speaking – inside machine learning – medium&#39;,
- &#39;backpropagation — how neural networks learn complex behaviors&#39;,
- &#39;airbnb data for analytics: chicago calendar&#39;,
- &#39;build a naive-bayes model with wml &amp; dsx&#39;,
- &#39;airbnb data for analytics: venice reviews&#39;,
- &#39;geographic coordinates of world locations&#39;,
- &#39;dsx: hybrid mode&#39;,
- &#39;interest rates&#39;,
- &#39;labor&#39;,
+<pre>[&#39;analyze energy consumption in buildings&#39;,
  &#39;apache spark lab, part 3: machine learning&#39;,
- &#39;machine learning for everyone&#39;,
- &#39;3992    using apache spark to predict attack vectors a...\nName: title, dtype: object&#39;,
- &#39;airbnb data for analytics: paris calendar&#39;,
- &#39;greenhouse gas emissions worldwide&#39;,
- &#39;the machine learning database&#39;,
- &#39;r markdown reference guide&#39;,
- &#34;h2o with ibm&#39;s data science experience (dsx)&#34;,
- &#39;statistical bias types explained (with examples)&#39;,
- &#39;a visual explanation of the back propagation algorithm for neural networks&#39;,
- &#39;leverage scikit-learn models with core ml&#39;,
- &#39;some random weekend reading&#39;,
- &#39;the new builders podcast ep 3: collaboration&#39;,
- &#39;uci: white wine quality&#39;,
- &#39;the million dollar question: where is my data?&#39;,
- &#39;airbnb data for analytics: sydney reviews&#39;,
- &#39;drowning in data sources: how data cataloging could fix your findability problems&#39;,
- &#39;essentials of machine learning algorithms (with python and r codes)&#39;,
- &#39;ibm watson machine learning: get started&#39;,
- &#39;use xgboost, scikit-learn &amp; ibm watson machine learning apis&#39;,
- &#39;tidy data in python&#39;,
- &#39;contraceptive prevalence (% women 15-49) by country&#39;,
- &#39;don’t overlook simpler techniques and algorithms&#39;,
- &#39;modeling energy usage in new york city&#39;,
- &#39;watson assistant workspace analysis with user logs&#39;,
- &#39;watson speech-to-text services — tl;dr need not apply&#39;,
- &#39;how to scale your analytics using r&#39;,
- &#39;airbnb data for analytics: antwerp listings test&#39;,
- &#39;airbnb data for analytics: amsterdam listings&#39;,
- &#39;use the machine learning library&#39;,
- &#39;let data dictate the visualization&#39;,
- &#39;workflow in r&#39;,
- &#39;housing (2015): united states demographic measures&#39;,
- &#39;measles immunization % children 12-23 months by country&#39;,
- &#39;common excel tasks demonstrated in\xa0pandas&#39;,
- &#39;analyzing streaming data from kafka topics&#39;,
- &#39;worldwide fuel oil consumption by household (in 1000 metric tons)&#39;,
- &#39;three reasons machine learning models go out of sync&#39;,
- &#39;the pandas data analysis library&#39;,
- &#39;are your predictive models like broken clocks?&#39;,
- &#39;machine learning and the science of choosing&#39;,
- &#39;working with on-premises databases — step by step&#39;,
- &#39;airbnb data for analytics: washington d.c. calendar&#39;,
- &#39;imitation learning in tensorflow (hopper from openai gym)&#39;,
- &#39;annual % inflation by country&#39;,
- &#39;higher-order logistic regression for large datasets&#39;,
- &#39;an interview with pythonista katharine jarmul&#39;,
- &#39;gosales transactions for logistic regression model&#39;,
- &#39;high-tech exports as % of manufactured exports by country&#39;,
- &#39;data tidying in data science experience&#39;,
- &#39;declarative machine learning&#39;,
- &#39;laplace noising versus simulated out of sample methods (cross frames)&#39;,
- &#39;airbnb data for analytics: san diego reviews&#39;,
- &#39;data science experience demo: modeling energy usage in nyc&#39;,
- &#39;load and analyze public data sets in dsx&#39;,
- &#39;country statistics: gross national saving&#39;,
- &#39;bayesian regularization for #neuralnetworks – autonomous agents\u200a—\u200a#ai&#39;,
- &#39;using deep learning to reconstruct high-resolution audio&#39;,
- &#39;manage object storage in dsx&#39;,
- &#39;why you should master r (even if it might eventually become obsolete)&#39;,
- &#39;using bigdl in dsx for deep learning on spark&#39;,
- &#39;analyze energy consumption in buildings&#39;,
- &#39;deep learning with tensorflow course by big data university&#39;,
- &#39;airbnb data for analytics: new orleans listings&#39;,
- &#39;pixiedust 1.0 is here! – ibm watson data lab&#39;,
- &#39;country statistics: crude oil - imports&#39;,
- &#39;data science platforms are on the rise and ibm is leading the way&#39;,
- &#39;simple graphing with ipython and\xa0pandas&#39;,
- &#39;improved water source by country: % population with access&#39;,
- &#39;introduction to neural networks, advantages and applications&#39;,
- &#39;learn tensorflow and deep learning together and now!&#39;,
- &#39;neurally embedded emojis&#39;,
- &#39;effectively using\xa0matplotlib&#39;,
- &#39;refugees&#39;,
- &#39;create a project for watson machine learning in dsx&#39;,
- &#39;this week in data science (april 25, 2017)&#39;,
- &#39;access ibm analytics for apache spark from rstudio&#39;,
- &#39;gross national income per capita, atlas method (current us$) by country&#39;,
- &#39;readr 1.0.0&#39;,
- &#39;8 ways to turn data into value with apache spark machine learning&#39;,
- &#39;united states demographic measures: zip code tabulation areas (zctas)&#39;,
- &#39;do i need to learn r?&#39;,
- &#39;uci: car evaluation&#39;,
- &#39;times world university ranking analysis&#39;,
- &#39;use iot data in streams designer for billing and alerts&#39;,
- &#39;pearson correlation aggregation on sparksql&#39;,
- &#39;access mysql with python&#39;,
- &#39;use ibm data science experience to detect time series anomalies&#39;,
- &#39;perform sentiment analysis with lstms, using tensorflow&#39;,
- &#39;country statistics: railways&#39;,
- &#39;using brunel in ipython/jupyter notebooks&#39;,
- &#39;data wrangling with dplyr and tidyr cheat sheet&#39;,
- &#39;data science for real-time streaming analytics&#39;,
- &#39;making data science a team sport&#39;,
- &#39;airbnb data for analytics: vienna listings&#39;,
- &#39;deep learning with data science experience&#39;,
- &#39;income (2015): united states demographic measures&#39;,
- &#39;visualize car data with brunel&#39;,
- &#39;ibm data science experience white paper - sparkr transforming r into a tool for big data analytics&#39;,
- &#39;from spark ml model to online scoring with scala&#39;,
- &#39;publish notebooks to github in dsx&#39;,
- &#39;overfitting in machine learning: what it is and how to prevent it&#39;,
- &#39;maximize oil company profits&#39;,
- &#39;percentage of internet users by country&#39;,
- &#39;a moving average trading strategy&#39;,
- &#39;country populations 15 years of age and over, by educational attainment, age and sex&#39;,
- &#39;back to basics — jupyter notebooks&#39;,
- &#39;migrating to python 3 with pleasure&#39;,
- &#39;how to write the first for loop in r&#39;,
- &#39;mycheatsheets.com&#39;,
- &#39;70 amazing free data sources you should know&#39;,
- &#39;what’s new in data refinery?&#39;,
- &#39;getting started with python&#39;,
- &#39;predicting the 2016 us presidential election&#39;,
- &#39;using shell scripts to control data flows created in watson applications&#39;,
- &#39;world marriage data&#39;,
- &#39;how to use db2 warehouse on cloud in data science experience notebooks&#39;,
- &#39;optimization for deep learning highlights in 2017&#39;,
- &#39;collect your own fitbit data with python&#39;,
- &#39;data science expert interview: holden karau&#39;,
- &#39;1448    i ranked every intro to data science course on...\nName: title, dtype: object&#39;,
- &#39;clustering: a guide for the perplexed&#39;,
- &#39;data visualization with r: scrum metrics&#39;,
- &#39;tidyverse practice: mapping large european cities&#39;,
- &#39;unmet need for family planning, spacing, percentage, worldwide, by country&#39;,
- &#39;this week in data science (august 02, 2016)&#39;,
- &#39;this week in data science (may 30, 2017)&#39;,
- &#39;stacking multiple custom models in watson visual recognition&#39;,
- &#39;data visualization with ggplot2 cheat sheet&#39;,
- &#39;this week in data science (july 26, 2016)&#39;,
- &#39;top 10 machine learning algorithms for beginners&#39;,
- &#39;part-time employment rate, worldwide, by country and year&#39;,
- &#39;520    using notebooks with pixiedust for fast, flexi...\nName: title, dtype: object&#39;,
- &#39;analyze precipitation data&#39;,
- &#39;super fast string matching in python&#39;,
- &#39;country statistics: telephones - mobile cellular&#39;,
- &#39;introduction to market basket analysis in\xa0python&#39;,
- &#34;let&#39;s have some fun with nfl data&#34;,
- &#39;consumer prices&#39;,
- &#39;a guide to receptive field arithmetic for convolutional neural networks&#39;,
- &#39;what is smote in an imbalanced class setting (e.g. fraud detection)?&#39;,
- &#39;using machine learning to predict value of homes on airbnb&#39;,
- &#39;introducing ibm watson studio &#39;,
- &#39;nips 2016 — day 2 highlights&#39;,
- &#39;9 mistakes to avoid when starting your career in data science&#39;,
- &#39;trust in data science&#39;,
- &#39;country statistics: central bank discount rate&#39;,
- &#39;style transfer experiments with watson machine learning&#39;,
- &#39;airbnb data for analytics: seattle calendar&#39;,
- &#39;country statistics: population&#39;,
- &#39;uci: abalone&#39;,
- &#39;top 20 r machine learning and data science packages&#39;,
- &#39;jupyter notebook tutorial&#39;,
- &#39;tidyr 0.6.0&#39;,
- &#39;country statistics: electricity - from fossil fuels&#39;,
- &#39;access postgresql with python&#39;,
- &#39;this week in data science (april 11, 2017)&#39;,
- &#39;finding optimal locations of new store using decision optimization&#39;,
- &#39;a guide to convolution arithmetic for deep learning&#39;,
- &#39;access postgresql with r&#39;,
- &#34;a beginner&#39;s guide to variational methods&#34;,
- &#39;discover hidden facebook usage insights&#39;,
- &#39;this week in data science (april 4, 2017)&#39;,
- &#39;developing ibm streams applications with the python api (version 1.6)&#39;,
- &#39;the difference between ai, machine learning, and deep learning?&#39;,
- &#39;run dsx notebooks on amazon emr&#39;,
- &#39;analyze open data sets with pandas dataframes&#39;,
- &#39;persistent changes to spark config in dsx&#39;,
- &#39;gradient boosting explained&#39;,
- &#39;uci: red wine quality&#39;,
- &#39;best packages for data manipulation in r&#39;,
- &#39;country population by gender 1985-2005&#39;,
- &#39;web picks (week of 4 september 2017)&#39;,
- &#39;sudoku&#39;,
- &#39;airbnb data for analytics: toronto listings&#39;,
- &#39;beyond parallelize and collect&#39;,
- &#39;electric power consumption (kwh per capita) by country&#39;,
- &#39;enjoy python 3.5 in jupyter notebooks&#39;,
- &#39;10 pieces of advice to beginner data scientists&#39;,
- &#39;predict loan applicant behavior with tensorflow neural networking&#39;,
- &#39;airbnb data for analytics: san diego listings&#39;,
- &#39;data science experience documentation&#39;,
- &#39;country statistics: industrial production growth rate&#39;,
- &#39;blogging with brunel&#39;,
- &#39;small steps to tensorflow&#39;,
- &#39;governance overview for ibm data catalog&#39;,
- &#39;this week in data science (october 18, 2016)&#39;,
- &#39;use r dataframes &amp; ibm watson natural language understanding&#39;,
- &#39;uci: sms spam collection&#39;,
- &#39;airbnb data for analytics: austin calendar&#39;,
- &#39;apache spark @scale: a 60 tb+ production use case&#39;,
- &#39;what’s new in the streaming analytics service on bluemix&#39;,
- &#39;brunel interactive visualizations in jupyter notebooks&#39;,
- &#39;airbnb data for analytics: antwerp calendar&#39;,
- &#39;airbnb data for analytics: barcelona calendar&#39;,
- &#39;watson machine learning for developers&#39;,
- &#39;a survey of books about apache spark™&#39;,
- &#39;country statistics: children under the age of 5 years underweight&#39;,
- &#39;annual precipitation by country 1990-2009&#39;,
- &#39;reducing overplotting in scatterplots&#39;,
- &#39;using rstudio in ibm data science experience&#39;,
- &#39;detect malfunctioning iot sensors with streaming analytics&#39;,
- &#39;improving quality of life with spark-empowered machine learning&#39;,
- &#39;country statistics: unemployment rate&#39;,
- &#39;airbnb data for analytics: venice calendar&#39;,
- &#39;breaking the 80/20 rule: how data catalogs transform data scientists’ productivity&#39;,
- &#39;airbnb data for analytics: boston calendar&#39;,
- &#39;uci: adult - predict income&#39;,
- &#39;i am not a data scientist – ibm watson data lab&#39;,
- &#39;this week in data science (february 28, 2017)&#39;,
- &#39;ingest data from message hub in a streams flow&#39;,
- &#39;environment statistics database - waste&#39;,
- &#39;customer demographics and sales&#39;,
- &#39;predicting churn with the spss random tree algorithm&#39;,
- &#39;life expectancy at birth by country in total years&#39;,
- &#39;score a predictive model built with ibm spss modeler, wml &amp; dsx&#39;,
- &#39;spark 1.4 for rstudio&#39;,
- &#39;when machine learning matters · erik bernhardsson&#39;,
- &#39;top 10 machine learning use cases: part 1&#39;,
- &#39;analyze ny restaurant data using spark in dsx&#39;,
- &#39;country statistics: natural gas - consumption&#39;,
- &#39;data science in the cloud&#39;,
- &#39;world tourism data by the world tourism organization&#39;,
- &#39;a glimpse inside the mind of a data scientist&#39;,
- &#39;web picks (week of 2 october 2017)&#39;,
- &#39;this week in data science (february 21, 2017)&#39;,
- &#39;use data assets in a project using ibm data catalog&#39;,
- &#39;working with ibm cloud object storage in python&#39;,
- &#39;use spark for r to load data and run sql queries&#39;,
- &#39;roads paved as % of total roads by country&#39;,
- &#39;shiny 0.12: interactive plots with ggplot2&#39;,
- &#39;country statistics: commercial bank prime lending rate&#39;,
- &#39;tensorflow quick tips&#39;,
- &#39;using deep learning with keras to predict customer churn&#39;,
- &#39;load db2 warehouse on cloud data with apache spark in dsx&#39;,
- &#39;use spark for python to load data and run sql queries&#39;,
- &#39;apache spark: upgrade and speed-up your analytics&#39;,
- &#39;top analytics tools in 2016&#39;,
- &#39;international liquidity&#39;,
- &#39;build deep learning architectures with neural network modeler&#39;,
- &#39;airbnb data for analytics: amsterdam calendar&#39;,
- &#39;visualize data with the matplotlib library&#39;,
- &#39;airbnb data for analytics: washington d.c. reviews&#39;,
- &#39;an attempt to understand boosting algorithm(s)&#39;,
- &#39;statistics for hackers&#39;,
- &#39;what is machine learning?&#39;,
- &#39;total employment, by economic activity (thousands)&#39;,
- &#39;this week in data science (may 23, 2017)&#39;,
- &#39;analyze traffic data from the city of san francisco&#39;,
- &#39;country statistics: stock of broad money&#39;,
- &#39;markdown for jupyter notebooks cheatsheet&#39;,
- &#39;finding the user in data science&#39;,
- &#39;energy use (kg of oil equivalent per capita) by country&#39;,
- &#39;predict chronic kidney disease using spss modeler flows&#39;,
- &#39;hyperparameter optimization: sven hafeneger&#39;,
- &#39;package development with devtools  cheat sheet&#39;,
- &#39;upload data and create data frames in jupyter notebooks&#39;,
- &#39;analyze facebook data using ibm watson and watson studio&#39;,
- &#39;airbnb data for analytics: trentino calendar&#39;,
- &#39;66855    migration from ibm bluemix data connect api (a...\nName: title, dtype: object&#39;,
- &#39;which one to choose for your problem&#39;,
- &#39;a dynamic duo – inside machine learning – medium&#39;,
- &#39;building your first machine learning system &#39;,
- &#39;employed population by occupation and age&#39;,
- &#39;rapidly build machine learning flows with dsx&#39;,
- &#39;data science bowl 2017&#39;,
- &#39;using pixiedust for fast, flexible, and easier data analysis and experimentation&#39;,
- &#39;country statistics: electricity - consumption&#39;,
- &#39;the 3 kinds of context: machine learning and the art of the frame&#39;,
- &#39;the power of machine learning in spark&#39;,
- &#39;deep learning trends and an example&#39;,
- &#39;this week in data science (november 01, 2016)&#39;,
- &#39;airbnb data for analytics: london reviews&#39;,
- &#39;learning statistics on youtube&#39;,
- &#39;variational auto-encoder for &#34;frey faces&#34; using keras&#39;,
- &#39;how to perform a logistic regression in r&#39;,
- &#39;airbnb data for analytics: oakland reviews&#39;,
- &#39;country statistics: health expenditures&#39;,
  &#39;better together: spss and data science experience&#39;,
- &#39;this week in data science (april 18, 2017)&#39;,
- &#39;time series prediction using recurrent neural networks (lstms)&#39;,
- &#39;a classification problem&#39;,
- &#39;using github for project control in dsx&#39;,
- &#39;develop a scala spark model on chicago building violations&#39;,
- &#39;airbnb data for analytics: new york city calendar&#39;,
- &#39;airbnb data for analytics: sydney listings&#39;,
- &#39;external debt stocks, total (dod, current us$) by country&#39;,
- &#39;country statistics: budget surplus or deficit&#39;,
- &#39;probabilistic graphical models tutorial\u200a—\u200apart 2 – stats and bots&#39;,
- &#39;automating web analytics through python&#39;,
- &#39;experience iot with coursera&#39;,
- &#39;ibm data catalog overview&#39;,
- &#39;10 essential algorithms for machine learning engineers&#39;,
- &#39;collecting data science cheat sheets&#39;,
- &#39;shiny 0.13.0&#39;,
- &#39;7 types of job profiles that makes you a data scientist&#39;,
- &#39;country statistics: stock of domestic credit&#39;,
- &#39;country statistics: current account balance&#39;,
- &#39;bayesian nonparametric models – stats and bots&#39;,
- &#39;this week in data science (january 31, 2017)&#39;,
- &#39;unstructured and structured data versus repetitive and non-repetitive&#39;,
- &#39;visualising data the node.js way&#39;,
- &#39;cifar-100 - python version&#39;,
- &#39;how to solve 90% of nlp problems&#39;,
- &#39;neural language modeling from scratch (part 1)&#39;,
- &#39;intentional homicide, number and rate per 100,000 population, by country&#39;,
- &#39;airbnb data for analytics: seattle reviews&#39;,
- &#39;use spark for scala to load data and run sql queries&#39;,
- &#39;how to get a job in deep learning&#39;,
- &#39;country statistics: life expectancy at birth&#39;,
- &#39;use spark r to load and analyze data&#39;,
- &#39;airbnb data for analytics: vancouver reviews&#39;,
- &#39;the data processing inequality&#39;,
- &#39;an introduction to stock market data analysis with r (part 1)&#39;,
- &#39;united states demographic measures: income&#39;,
- &#39;rstudio ide  cheat sheet&#39;,
- &#39;use decision optimization to schedule league games&#39;,
+ &#39;deploy your python model as a restful api&#39;,
  &#39;using machine learning to predict parking difficulty&#39;,
- &#39;this week in data science (november 22, 2016)&#39;,
- &#39;breast cancer wisconsin (diagnostic) data set&#39;,
- &#39;cleaning the swamp: turn your data lake into a source of crystal-clear insight&#39;,
- &#39;using machine learning to predict baseball injuries&#39;,
- &#39;improving real-time object detection with yolo&#39;,
- &#39;56594    lifelong (machine) learning: how automation ca...\nName: title, dtype: object&#39;,
- &#39;ibm cloud sql query&#39;,
- &#39;airbnb data for analytics: madrid listings&#39;,
- &#39;refugees, worldwide, 2003 - 2013&#39;,
- &#39;brunel: imitation is a sincere form of flattery&#39;,
- &#39;find airbnb deals in portland with machine learning using r&#39;,
- &#39;ibm watson facebook posts for 2015&#39;,
- &#39;airbnb data for analytics: portland calendar&#39;,
- &#39;random forest interpretation – conditional feature contributions&#39;,
- &#39;this week in data science (february 14, 2017)&#39;,
- &#39;how can data scientists collaborate to build better business&#39;,
- &#39;recommender systems: approaches &amp; algorithms&#39;,
- &#39;airbnb data for analytics: trentino listings&#39;,
- &#39;probabilistic graphical models tutorial\u200a—\u200apart 1 – stats and bots&#39;,
- &#39;country statistics: distribution of family income - gini index&#39;,
- &#39;use deep learning for image classification&#39;,
- &#39;building custom machine learning algorithms with apache systemml&#39;,
- &#39;leaflet: interactive web maps with r&#39;,
- &#39;getting started with apache mahout&#39;,
- &#39;apache spark lab, part 2: querying data&#39;,
- &#39;predicting gentrification using longitudinal census data&#39;,
- &#39;roads, paved (% of total roads), worldwide, 1990-2011&#39;,
- &#39;15 page tutorial for r&#39;,
- &#39;process events from the watson iot platform in a streams python application&#39;,
- &#39;graph-based machine learning&#39;,
- &#39;make machine learning a reality for your enterprise&#39;,
- &#39;recommendation system algorithms – stats and bots&#39;,
- &#39;the greatest public datasets for ai – startup grind&#39;,
- &#39;python machine learning: scikit-learn tutorial&#39;,
- &#39;flexdashboard: interactive dashboards for r&#39;,
- &#39;uci: poker hand - training data set&#39;,
- &#39;fertility rate by country in total births per woman&#39;,
- &#39;leverage python, scikit, and text classification for behavioral profiling&#39;,
- &#39;adoption of machine learning to software failure prediction&#39;,
- &#39;what is hadoop?&#39;,
- &#39;airbnb data for analytics: toronto calendar&#39;,
- &#39;airbnb data for analytics: austin reviews&#39;,
- &#39;programmatic evaluation using watson conversation&#39;,
- &#39;access mysql with r&#39;,
- &#39;transfer learning for flight delay prediction via variational autoencoders&#39;,
- &#39;ml algorithm != learning machine&#39;,
- &#39;announcing dsx environments in beta!&#39;,
- &#39;united states demographic measures: education&#39;,
- &#39;7292    a dramatic tour through python’s data visualiz...\nName: title, dtype: object&#39;,
- &#39;web picks (week of 23 january 2017)&#39;,
- &#39;analyze data, build a dashboard with spark and pixiedust&#39;,
- &#39;country statistics: telephones - fixed lines&#39;,
- &#39;airbnb data for analytics: athens listings&#39;,
- &#39;jupyter notebooks with scala, python, or r kernels&#39;,
- &#39;notebooks: a power tool for data scientists&#39;,
- &#39;airbnb data for analytics: amsterdam reviews&#39;,
- &#39;airbnb data for analytics: vancouver calendar&#39;,
- &#39;airbnb data for analytics: london listings&#39;,
- &#39;10 data science, machine learning and ai podcasts you must listen to&#39;,
- &#39;airbnb data for analytics: boston listings&#39;,
- &#39;deep forest: towards an alternative to deep neural networks&#39;,
- &#39;uci: forest fires&#39;,
- &#39;education (2015): united states demographic measures&#39;,
- &#39;one year as a data scientist at stack overflow&#39;,
- &#39;country statistics: crude oil - exports&#39;,
- &#39;load data into rstudio for analysis in dsx&#39;,
- &#39;fighting gerrymandering: using data science to draw fairer congressional districts&#39;,
- &#39;sparklyr — r interface for apache spark&#39;,
- &#39;intelligent applications - apache spark&#39;,
- &#39;apache spark™ 2.0: extend structured streaming for spark ml&#39;,
- &#39;understanding empirical bayes estimation (using baseball statistics)&#39;,
- &#39;run shiny applications in rstudio in dsx&#39;,
- &#39;best practices for custom models in watson visual recognition&#39;,
- &#39;poverty (2015): united states demographic measures&#39;,
- &#39;apache spark as the new engine of genomics&#39;,
- &#39;new shiny cheat sheet and video tutorial&#39;,
- &#39;country statistics: refined petroleum products - production&#39;,
- &#39;working interactively with rstudio and notebooks in dsx&#39;,
- &#39;gosales transactions for naive bayes model&#39;,
- &#39;births attended by skilled health staff (% of total) by country&#39;,
- &#39;a fast on-disk format for data frames for r and python, powered by apache arrow&#39;,
- &#39;the two phases of gradient descent in deep learning&#39;,
- &#39;learn basics about notebooks and apache spark&#39;,
- &#39;create a project in dsx&#39;,
- &#39;access db2 warehouse on cloud and db2 with python&#39;,
- &#39;country statistics: gdp - per capita (ppp)&#39;,
- &#39;modern machine learning algorithms&#39;,
- &#39;pixiedust gets its first community-driven feature in 1.0.4&#39;,
- &#39;deep learning, structure and innate priors&#39;,
- &#39;this week in data science (march 28, 2017)&#39;,
- &#39;create a connection and add it to a project using ibm data refinery&#39;,
- &#39;quick guide to build a recommendation engine in python&#39;,
- &#39;customers of a telco including services used&#39;,
- &#39;country statistics: infant mortality rate&#39;,
- &#39;model a golomb ruler&#39;,
- &#39;10 powerful features on watson data platform, no coding necessary&#39;,
- &#39;share the (pixiedust) magic – ibm watson data lab – medium&#39;,
- &#39;webinar: april 11 - thinking inside the box: you can do that inside a data frame?!&#39;,
- &#39;making data cleaning simple with the sparkling.data library&#39;,
- &#39;uci: iris&#39;,
- &#39;d3heatmap: interactive heat maps&#39;,
- &#39;word2vec in data products&#39;,
- &#39;airbnb data for analytics: vienna calendar&#39;,
- &#39;airbnb data for analytics: austin listings&#39;,
- &#39;practical tutorial on random forest and parameter tuning in r&#39;,
- &#39;what is text analytics?&#39;,
- &#39;advancements in the spark community&#39;,
- &#39;0 to life-changing app: scala first steps and an interview with jakob odersky&#39;,
- &#39;spark sql - rapid performance evolution&#39;,
- &#39;use pmml to predict iris species&#39;,
- &#39;airbnb data for analytics: new orleans reviews&#39;,
- &#39;the nurse assignment problem data&#39;,
- &#39;analyze open data sets using pandas in a python notebook&#39;,
- &#39;airbnb data for analytics: mallorca reviews&#39;,
- &#39;continuous learning on watson&#39;,
- &#39;foreign direct investment, net inflows (bop, current us$) by country&#39;,
- &#39;this week in data science (january 10, 2017)&#39;,
- &#39;consumption of ozone-depleting cfcs in odp metric tons&#39;,
- &#39;airbnb data for analytics: paris listings&#39;,
- &#39;this week in data science (december 27, 2016)&#39;,
- &#39;airbnb data for analytics: sydney calendar&#39;,
- &#39;self-service data preparation with ibm data refinery&#39;,
- &#39;machine learning for the enterprise&#39;,
- &#39;building a business that combines human experts and data science&#39;,
- &#39;marital status of men and women&#39;,
- &#34;i&#39;d rather predict basketball games than elections: elastic nba rankings&#34;,
- &#39;build a python app on the streaming analytics service&#39;,
- &#39;country statistics: internet users&#39;,
- &#39;join and enrich data from multiple sources&#39;,
- &#39;real-time sentiment analysis of twitter hashtags with spark (+ pixiedust)&#39;,
- &#39;country statistics - europe - population and society&#39;,
- &#39;this week in data science (march 7, 2017)&#39;,
- &#34;december &#39;16 rstudio tips and tricks&#34;,
- &#39;data visualization playbook: the right level of detail&#39;,
- &#39;a tensorflow regression model to predict house values&#39;,
- &#39;forest area by country in sq km&#39;,
- &#39;the new builders ep. 13: all the data that’s fit to analyze&#39;,
- &#39;airbnb data for analytics: santa cruz county reviews&#39;,
- &#39;uci: wine recognition&#39;,
- &#39;upload files to ibm data science experience using the command line&#39;,
- &#39;households by type of household, age and sex of head of household&#39;,
- &#39;neural networks for beginners: popular types and applications&#39;,
- &#39;airbnb data for analytics: antwerp reviews&#39;,
- &#39;country statistics: crude oil - proved reserves&#39;,
- &#39;worldwide county and region - national accounts - gross national income 1948-2010&#39;,
- &#39;statistical bias types explained&#39;,
- &#39;deep learning achievements over the past year &#39;,
- &#39;predicting flight cancellations using weather data, part 3&#39;,
- &#39;apache spark lab, part 1: basic concepts&#39;,
- &#39;population below national poverty line, total, percentage&#39;,
- &#39;use ibm data science experience to read and write data stored on amazon s3&#39;,
- &#39;how smart catalogs can turn the big data flood into an ocean of opportunity&#39;,
- &#39;machine learning for the enterprise.&#39;,
- &#39;this week in data science (may 2, 2017)&#39;,
- &#39;apache spark™ 2.0: impressive improvements to spark sql&#39;,
- &#39;adolescent fertility rate (births per 1,000 women ages 15-19), worldwide&#39;,
- &#39;improving the roi of big data and analytics through leveraging new sources of data&#39;,
- &#39;pixiedust: magic for your python notebook&#39;,
- &#39;country surface area (sq. km)&#39;,
- &#39;got zip code data? prep it for analytics. – ibm watson data lab – medium&#39;,
- &#39;jupyter (ipython) notebooks features&#39;,
- &#39;use the cloudant-spark connector in python notebook&#39;,
- &#39;51822    using apache spark as a parallel processing fr...\nName: title, dtype: object&#39;,
- &#39;country statistics: airports&#39;,
- &#39;this week in data science (may 16, 2017)&#39;,
- &#39;healthcare python streaming application demo&#39;,
- &#39;timeseries data analysis of iot events by using jupyter notebook&#39;,
- &#34;for ai to get creative, it must learn the rules--then how to break &#39;em&#34;,
- &#39;time series analysis using max/min and neuroscience&#39;,
- &#39;ggplot2 2.2.0 coming soon!&#39;,
- &#39;apache spark 2.0: machine learning. under the hood and over the rainbow.&#39;,
- &#34;2875    hugo larochelle&#39;s neural network &amp; deep learni...\nName: title, dtype: object&#34;,
- &#39;airbnb data for analytics: brussels reviews&#39;,
- &#39;making sense of the bias / variance trade-off in (deep) reinforcement learning&#39;,
- &#39;social media insights with watson developer cloud &amp; watson studio&#39;,
- &#39;welcome to pixiedust&#39;,
- &#39;airbnb data for analytics: toronto reviews&#39;,
- &#39;what is spark?&#39;,
- &#39;analyze accident reports on amazon emr spark&#39;,
- &#39;connect to db2 warehouse on cloud and db2 using scala&#39;,
- &#39;dt: an r interface to the datatables library&#39;,
- &#39;fortune 100 companies&#39;,
- &#39;apache spark™ 2.0: migrating applications&#39;,
- &#39;uci: heart disease - cleveland&#39;,
- &#39;health insurance (2015): united states demographic measures&#39;,
- &#39;optimizing a marketing campaign: moving from predictions to actions&#39;,
- &#39;why even a moth’s brain is smarter than an ai&#39;,
- &#39;how to use version control (github) in rstudio within dsx?&#39;,
- &#39;open sourcing 223gb of driving data – udacity inc&#39;,
- &#39;learn about data science in world of watson&#39;,
- &#39;airbnb data for analytics: barcelona reviews&#39;,
- &#39;web picks - dataminingapps&#39;,
- &#39;airbnb data for analytics: berlin reviews&#39;,
- &#39;airbnb data for analytics: boston reviews&#39;,
- &#39;a day in the life of a data engineer&#39;,
- &#39;dplyr 0.5.0&#39;,
- &#39;pixieapp for outlier detection&#39;,
- &#39;apache systemml&#39;,
- &#39;empirical bayes for multiple sample sizes&#39;,
- &#39;from python nested lists to multidimensional numpy arrays&#39;,
- &#39;8170    data science expert interview: dez blanchfield...\nName: title, dtype: object&#39;,
- &#39;using apply, sapply, lapply in r&#39;,
- &#39;from local spark mllib model to cloud with watson machine learning&#39;,
- &#39;military expenditure as % of gdp by country&#39;,
- &#39;city population by sex, city and city type&#39;,
- &#39;work with data connections in dsx&#39;,
- &#39;python for loops explained (python for data science basics #5)&#39;,
- &#39;transform anything into a vector&#39;,
- &#39;country statistics: merchant marine&#39;,
- &#39;read and write data to and from amazon s3 buckets in rstudio&#39;,
- &#39;apache spark sql analyzer resolves order-by column&#39;,
- &#39;intents &amp; examples for ibm watson conversation&#39;,
- &#39;why relational databases and r?&#39;,
- &#39;foundational methodology for data science&#39;,
- &#39;talent vs luck: the role of randomness in success and failure&#39;,
- &#39;spark 2.1 and job monitoring available in dsx&#39;,
- &#39;putting a human face on machine learning&#39;,
- &#39;insights from new york car accident reports&#39;,
- &#39;this week in data science&#39;,
- &#39;pulling and displaying etf data&#39;,
- &#39;the t-distribution: a key statistical concept discovered by a beer brewery&#39;,
- &#39;mapping points with folium&#39;,
- &#39;airbnb data for analytics: chicago reviews&#39;,
- &#39;twelve\xa0ways to color a map of africa using brunel&#39;,
- &#39;primary school completion rate % of relevant age group by country&#39;,
- &#39;how to map usa rivers using ggplot2&#39;,
- &#39;the unit commitment problem&#39;,
- &#39;get started with streams designer by following this roadmap&#39;,
- &#39;airbnb data for analytics: montreal listings&#39;,
- &#34;a kaggler&#39;s guide to model stacking in practice&#34;,
- &#39;build a logistic regression model with wml &amp; dsx&#39;,
- &#39;recent trends in recommender systems&#39;,
- &#39;environment statistics database - water&#39;,
- &#39;a new version of dt (0.2) on cran&#39;,
- &#39;flightpredict ii: the sequel  – ibm watson data lab&#39;,
- &#39;data visualization playbook: telling the data story&#39;,
+ &#39;variational auto-encoder for &#34;frey faces&#34; using keras&#39;,
+ &#39;the nurse assignment problem&#39;,
  &#39;challenges in deep learning&#39;,
- &#39;airbnb data for analytics: dublin reviews&#39;,
- &#39;hurricane how-to&#39;,
- &#39;airbnb data for analytics: new york city reviews&#39;,
- &#39;interconnect with us&#39;,
- &#39;airbnb data for analytics: athens reviews&#39;,
- &#39;web picks (december 2017)&#39;,
- &#39;mobile cellular subscriptions per 100 people by country&#39;,
- &#39;airbnb data for analytics: berlin calendar&#39;,
- &#39;ratio (% of population) at national poverty line by country&#39;,
- &#39;government consumption expenditure&#39;,
- &#39;visual information theory &#39;,
- &#39;mobile-cellular telephone subscriptions per 100 inhabitants, worldwide&#39;,
- &#39;shaping data with ibm data refinery&#39;,
- &#39;annual % population growth by country&#39;,
- &#39;data visualization playbook: revisiting the basics&#39;,
- &#39;country statistics: maternal mortality rate&#39;,
- &#39;calls by customers of a telco company&#39;,
- &#39;build a predictive analytic model&#39;,
- &#39;natural gas production, 1995 - 2012, worldwide&#39;,
- &#39;how ibm builds an effective data science team&#39;,
- &#39;model bike sharing data with spss&#39;,
- &#39;overlapping co-cluster recommendation algorithm (ocular)&#39;,
- &#39;interactive time series with dygraphs&#39;,
- &#39;cifar-10 - python version&#39;,
- &#39;configuring the apache spark sql context&#39;,
- &#39;analyzing data by using the sparkling.data library features&#39;,
- &#39;r for data science&#39;,
- &#39;this week in data science (january 24, 2017)&#39;,
- &#39;using dsx notebooks to analyze github data&#39;,
- &#39;country statistics: imports&#39;,
- &#39;cache table in apache spark sql&#39;,
- &#39;introducing streams designer&#39;,
- &#39;machine learning exercises in python, part 1&#39;,
- &#39;68879    don’t throw more data at the problem! here’s h...\nName: title, dtype: object&#39;,
- &#39;use sql with data in hadoop python&#39;,
- &#39;airbnb data for analytics: trentino reviews&#39;,
- &#39;seti data, publicly available, from ibm&#39;,
- &#39;worldwide electricity demand and production 1990-2012&#39;,
- &#39;agriculture, value added (% of gdp) by country&#39;,
- &#39;sector correlations shiny app&#39;,
- &#39;classify tumors with machine learning&#39;,
- &#39;house building with worker skills&#39;,
- &#39;big data is better data&#39;,
- &#39;car performance data&#39;,
- &#39;categorize urban density&#39;,
- &#39;ibm data catalog is now generally available&#39;,
- &#39;aspiring data scientists! start to learn statistics with these 6 books!&#39;,
- &#39;deep learning from scratch i: computational graphs&#39;,
- &#39;fashion-mnist&#39;,
- &#39;can a.i. be taught to explain itself?&#39;,
- &#39;a comparison of logistic regression and naive bayes &#39;,
- &#39;airbnb data for analytics: athens calendar&#39;,
- &#39;interactive web apps with shiny cheat sheet&#39;,
- &#39;get social with your notebooks in dsx&#39;,
- &#39;54174    detect potentially malfunctioning sensors in r...\nName: title, dtype: object&#39;]</pre>
+ &#39;using rstudio in ibm data science experience&#39;,
+ &#39;using deep learning with keras to predict customer churn&#39;]</pre>
 </div>
 
 </div>
@@ -16014,7 +15968,7 @@ The 3 most similar users to user 46 are: [4201, 23, 3782]
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[88]:</div>
+<div class="prompt input_prompt">In&nbsp;[170]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Test your functions here - No need to change this code - just run this cell</span>
@@ -16066,7 +16020,790 @@ The 3 most similar users to user 46 are: [4201, 23, 3782]
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[103]:</div>
+<div class="prompt input_prompt">In&nbsp;[171]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># user_item.dot(user_item.loc[1])</span>
+
+<span class="n">user_item</span><span class="o">.</span><span class="n">dot</span><span class="p">(</span><span class="n">user_item</span><span class="o">.</span><span class="n">loc</span><span class="p">[</span><span class="mi">20</span><span class="p">])</span><span class="o">.</span><span class="n">sort_values</span><span class="p">(</span><span class="n">ascending</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span><span class="o">.</span><span class="n">drop</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span><span class="o">.</span><span class="n">to_frame</span><span class="p">(</span><span class="n">name</span><span class="o">=</span><span class="s2">&quot;similarity&quot;</span><span class="p">)</span><span class="o">.</span><span class="n">reset_index</span><span class="p">()</span><span class="o">.</span><span class="n">head</span><span class="p">(</span><span class="mi">10</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt output_prompt">Out[171]:</div>
+
+
+
+<div class="output_html rendered_html output_subarea output_execute_result">
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>user_id</th>
+      <th>similarity</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>20</td>
+      <td>3</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>40</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>113</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>4932</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>5123</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <th>5</th>
+      <td>419</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <th>6</th>
+      <td>196</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <th>7</th>
+      <td>2164</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <th>8</th>
+      <td>2354</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <th>9</th>
+      <td>4883</td>
+      <td>2</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[172]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># user_item.loc[3933]</span>
+<span class="p">[</span><span class="nb">str</span><span class="p">(</span><span class="n">aid</span><span class="p">)</span> <span class="k">for</span> <span class="n">aid</span> <span class="ow">in</span> <span class="n">user_item</span><span class="o">.</span><span class="n">loc</span><span class="p">[</span><span class="mi">3933</span><span class="p">][</span><span class="n">user_item</span><span class="o">.</span><span class="n">loc</span><span class="p">[</span><span class="mi">3933</span><span class="p">]</span> <span class="o">==</span> <span class="mi">1</span><span class="p">]]</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt output_prompt">Out[172]:</div>
+
+
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>[&#39;1&#39;,
+ &#39;1&#39;,
+ &#39;1&#39;,
+ &#39;1&#39;,
+ &#39;1&#39;,
+ &#39;1&#39;,
+ &#39;1&#39;,
+ &#39;1&#39;,
+ &#39;1&#39;,
+ &#39;1&#39;,
+ &#39;1&#39;,
+ &#39;1&#39;,
+ &#39;1&#39;,
+ &#39;1&#39;,
+ &#39;1&#39;,
+ &#39;1&#39;,
+ &#39;1&#39;,
+ &#39;1&#39;,
+ &#39;1&#39;,
+ &#39;1&#39;,
+ &#39;1&#39;,
+ &#39;1&#39;,
+ &#39;1&#39;,
+ &#39;1&#39;,
+ &#39;1&#39;,
+ &#39;1&#39;,
+ &#39;1&#39;,
+ &#39;1&#39;,
+ &#39;1&#39;,
+ &#39;1&#39;,
+ &#39;1&#39;,
+ &#39;1&#39;,
+ &#39;1&#39;,
+ &#39;1&#39;,
+ &#39;1&#39;]</pre>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[173]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># top_m_neighbors = </span>
+<span class="n">neighbors_df</span> <span class="o">=</span> <span class="n">get_top_sorted_users</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span>
+<span class="n">top_m_neighbors</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="n">neighbors_df</span><span class="p">[:</span><span class="mi">10</span><span class="p">][</span><span class="s1">&#39;neighbor_id&#39;</span><span class="p">])</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">top_m_neighbors</span><span class="p">)</span>
+<span class="n">recs</span> <span class="o">=</span> <span class="p">[]</span>
+<span class="k">for</span> <span class="n">uid</span> <span class="ow">in</span> <span class="n">top_m_neighbors</span><span class="p">:</span>
+    <span class="n">article_ids</span> <span class="o">=</span> <span class="n">user_item</span><span class="o">.</span><span class="n">loc</span><span class="p">[</span><span class="n">uid</span><span class="p">]</span>
+    <span class="n">recs</span><span class="o">.</span><span class="n">extend</span><span class="p">([</span><span class="nb">str</span><span class="p">(</span><span class="n">aid</span><span class="p">)</span> <span class="k">for</span> <span class="n">aid</span> <span class="ow">in</span> <span class="n">article_ids</span><span class="p">[</span><span class="n">article_ids</span> <span class="o">==</span> <span class="mi">1</span><span class="p">]</span><span class="o">.</span><span class="n">index</span><span class="p">])</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="n">recs</span><span class="p">[:</span><span class="mi">10</span><span class="p">])</span>
+    
+    
+<span class="c1"># # remove duplicate</span>
+<span class="n">recs</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="nb">set</span><span class="p">(</span><span class="n">recs</span><span class="p">[:</span><span class="mi">10</span><span class="p">]))</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">recs</span><span class="p">)</span>
+<span class="c1"># # set article names and remove duplicate</span>
+<span class="c1"># rec_names = list(set(df[df[&#39;article_id&#39;].isin(recs)][&#39;title&#39;]))    </span>
+<span class="c1"># return recs, rec_names</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>    neighbor_id  similarity  num_interactions
+0          3933          35                45
+1            23          17               364
+2          3782          17               363
+3           203          15               160
+4          4459          15               158
+5           131          14               145
+6          3870          14               144
+7            46          13                63
+8          4201          13                61
+10           49          12               147
+[3933, 23, 3782, 203, 4459, 131, 3870, 46, 4201, 49]
+[&#39;43.0&#39;, &#39;109.0&#39;, &#39;268.0&#39;, &#39;310.0&#39;, &#39;329.0&#39;, &#39;346.0&#39;, &#39;390.0&#39;, &#39;494.0&#39;, &#39;525.0&#39;, &#39;585.0&#39;]
+[&#39;109.0&#39;, &#39;310.0&#39;, &#39;268.0&#39;, &#39;390.0&#39;, &#39;525.0&#39;, &#39;346.0&#39;, &#39;585.0&#39;, &#39;329.0&#39;, &#39;43.0&#39;, &#39;494.0&#39;]
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[174]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="n">df</span><span class="o">.</span><span class="n">loc</span><span class="p">[</span><span class="n">df</span><span class="p">[</span><span class="s1">&#39;title&#39;</span><span class="p">]</span><span class="o">==</span><span class="s1">&#39;analyze energy consumption in buildings&#39;</span><span class="p">,]</span><span class="o">.</span><span class="n">count</span><span class="p">())</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">df</span><span class="o">.</span><span class="n">loc</span><span class="p">[</span><span class="n">df</span><span class="p">[</span><span class="s1">&#39;title&#39;</span><span class="p">]</span><span class="o">==</span><span class="s1">&#39;dsx: hybrid mode&#39;</span><span class="p">,]</span><span class="o">.</span><span class="n">count</span><span class="p">())</span>
+
+<span class="c1"># list(set(df[df[&#39;article_id&#39;].isin(article_ids)][&#39;title&#39;]))</span>
+<span class="c1"># </span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>article_id    512
+title         512
+user_id       512
+dtype: int64
+article_id    80
+title         80
+user_id       80
+dtype: int64
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[175]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">ttestt</span><span class="p">(</span><span class="n">user_id</span><span class="p">,</span> <span class="n">m</span><span class="o">=</span><span class="mi">10</span><span class="p">):</span>
+    <span class="n">neighbors_df</span> <span class="o">=</span> <span class="n">get_top_sorted_users</span><span class="p">(</span><span class="n">user_id</span><span class="p">)</span>
+
+    <span class="c1"># set top-m neighbor_id</span>
+    <span class="n">top_m_neighbors</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="n">neighbors_df</span><span class="p">[:</span><span class="n">m</span><span class="p">][</span><span class="s1">&#39;neighbor_id&#39;</span><span class="p">])</span>
+    <span class="c1"># set article_ids seen by top-m neighbors</span>
+    <span class="n">recs</span> <span class="o">=</span> <span class="p">[]</span>
+    <span class="k">for</span> <span class="n">uid</span> <span class="ow">in</span> <span class="n">top_m_neighbors</span><span class="p">:</span>
+        <span class="n">article_ids</span> <span class="o">=</span> <span class="n">user_item</span><span class="o">.</span><span class="n">loc</span><span class="p">[</span><span class="n">uid</span><span class="p">]</span>
+        <span class="n">recs</span><span class="o">.</span><span class="n">extend</span><span class="p">([</span><span class="nb">str</span><span class="p">(</span><span class="n">aid</span><span class="p">)</span> <span class="k">for</span> <span class="n">aid</span> <span class="ow">in</span> <span class="n">article_ids</span><span class="p">[</span><span class="n">article_ids</span> <span class="o">==</span> <span class="mi">1</span><span class="p">]</span><span class="o">.</span><span class="n">index</span><span class="p">])</span>
+
+    <span class="c1"># remove duplicate</span>
+    <span class="n">recs</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="nb">set</span><span class="p">(</span><span class="n">recs</span><span class="p">[:</span><span class="n">m</span><span class="p">]))</span>
+    <span class="nb">print</span><span class="p">()</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">recs</span><span class="p">[:</span><span class="mi">5</span><span class="p">])</span>
+    <span class="c1"># set article names and remove duplicate</span>
+    <span class="n">rec_names</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="nb">set</span><span class="p">(</span><span class="n">df</span><span class="p">[</span><span class="n">df</span><span class="p">[</span><span class="s1">&#39;article_id&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">isin</span><span class="p">(</span><span class="n">recs</span><span class="p">)][</span><span class="s1">&#39;title&#39;</span><span class="p">]))</span>
+    <span class="k">return</span> <span class="n">recs</span><span class="p">,</span> <span class="n">rec_names</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="n">user_user_recs_part2</span><span class="p">(</span><span class="mi">20</span><span class="p">))</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">ttestt</span><span class="p">(</span><span class="mi">20</span><span class="p">))</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>    neighbor_id  similarity  num_interactions
+13          170           2               116
+12         3169           2               114
+9           204           2                97
+15         5138           2                95
+0            40           2                78
+2          4932           2                76
+1           113           2                68
+8          4883           2                67
+4           419           2                16
+5           196           2                15
+
+[&#39;109.0&#39;, &#39;1162.0&#39;, &#39;1336.0&#39;, &#39;1386.0&#39;, &#39;125.0&#39;]
+([&#39;109.0&#39;, &#39;1162.0&#39;, &#39;1336.0&#39;, &#39;1386.0&#39;, &#39;125.0&#39;, &#39;302.0&#39;, &#39;1172.0&#39;, &#39;1420.0&#39;, &#39;232.0&#39;, &#39;1351.0&#39;], [&#39;analyze energy consumption in buildings&#39;, &#39;learn basics about notebooks and apache spark&#39;, &#39;apache spark lab, part 3: machine learning&#39;, &#39;model bike sharing data with spss&#39;, &#39;statistics for hackers&#39;, &#39;accelerate your workflow with dsx&#39;, &#39;small steps to tensorflow&#39;, &#39;use apache systemml and spark for machine learning&#39;, &#39;tensorflow quick tips&#39;, &#39;self-service data preparation with ibm data refinery&#39;])
+    neighbor_id  similarity  num_interactions
+13          170           2               116
+12         3169           2               114
+9           204           2                97
+15         5138           2                95
+0            40           2                78
+2          4932           2                76
+1           113           2                68
+8          4883           2                67
+4           419           2                16
+5           196           2                15
+
+[&#39;109.0&#39;, &#39;164.0&#39;, &#39;205.0&#39;, &#39;125.0&#39;, &#39;302.0&#39;]
+([&#39;109.0&#39;, &#39;164.0&#39;, &#39;205.0&#39;, &#39;125.0&#39;, &#39;302.0&#39;, &#39;232.0&#39;, &#39;142.0&#39;, &#39;362.0&#39;, &#39;12.0&#39;, &#39;336.0&#39;], [&#39;dsx: hybrid mode&#39;, &#39;statistics for hackers&#39;, &#39;timeseries data analysis of iot events by using jupyter notebook&#39;, &#39;accelerate your workflow with dsx&#39;, &#34;a beginner&#39;s guide to variational methods&#34;, &#39;tensorflow quick tips&#39;, &#39;neural networks for beginners: popular types and applications&#39;, &#39;learn tensorflow and deep learning together and now!&#39;, &#39;self-service data preparation with ibm data refinery&#39;, &#39;challenges in deep learning&#39;])
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[176]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">df</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt output_prompt">Out[176]:</div>
+
+
+
+<div class="output_html rendered_html output_subarea output_execute_result">
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>article_id</th>
+      <th>title</th>
+      <th>user_id</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>1430.0</td>
+      <td>using pixiedust for fast, flexible, and easier...</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>1314.0</td>
+      <td>healthcare python streaming application demo</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>1429.0</td>
+      <td>use deep learning for image classification</td>
+      <td>3</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>1338.0</td>
+      <td>ml optimization using cognitive assistant</td>
+      <td>4</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>1276.0</td>
+      <td>deploy your python model as a restful api</td>
+      <td>5</td>
+    </tr>
+    <tr>
+      <th>5</th>
+      <td>1432.0</td>
+      <td>visualize data with the matplotlib library</td>
+      <td>6</td>
+    </tr>
+    <tr>
+      <th>6</th>
+      <td>1429.0</td>
+      <td>use deep learning for image classification</td>
+      <td>7</td>
+    </tr>
+    <tr>
+      <th>7</th>
+      <td>593.0</td>
+      <td>upload files to ibm data science experience us...</td>
+      <td>8</td>
+    </tr>
+    <tr>
+      <th>8</th>
+      <td>1314.0</td>
+      <td>healthcare python streaming application demo</td>
+      <td>9</td>
+    </tr>
+    <tr>
+      <th>9</th>
+      <td>1185.0</td>
+      <td>classify tumors with machine learning</td>
+      <td>10</td>
+    </tr>
+    <tr>
+      <th>10</th>
+      <td>993.0</td>
+      <td>configuring the apache spark sql context</td>
+      <td>11</td>
+    </tr>
+    <tr>
+      <th>11</th>
+      <td>14.0</td>
+      <td>got zip code data? prep it for analytics. – ib...</td>
+      <td>12</td>
+    </tr>
+    <tr>
+      <th>12</th>
+      <td>1395.0</td>
+      <td>the unit commitment problem</td>
+      <td>13</td>
+    </tr>
+    <tr>
+      <th>13</th>
+      <td>1314.0</td>
+      <td>healthcare python streaming application demo</td>
+      <td>4</td>
+    </tr>
+    <tr>
+      <th>14</th>
+      <td>1170.0</td>
+      <td>apache spark lab, part 1: basic concepts</td>
+      <td>10</td>
+    </tr>
+    <tr>
+      <th>15</th>
+      <td>542.0</td>
+      <td>getting started with python</td>
+      <td>14</td>
+    </tr>
+    <tr>
+      <th>16</th>
+      <td>12.0</td>
+      <td>timeseries data analysis of iot events by usin...</td>
+      <td>11</td>
+    </tr>
+    <tr>
+      <th>17</th>
+      <td>1430.0</td>
+      <td>using pixiedust for fast, flexible, and easier...</td>
+      <td>15</td>
+    </tr>
+    <tr>
+      <th>18</th>
+      <td>1338.0</td>
+      <td>ml optimization using cognitive assistant</td>
+      <td>16</td>
+    </tr>
+    <tr>
+      <th>19</th>
+      <td>173.0</td>
+      <td>10 must attend data science, ml and ai confere...</td>
+      <td>17</td>
+    </tr>
+    <tr>
+      <th>20</th>
+      <td>1314.0</td>
+      <td>healthcare python streaming application demo</td>
+      <td>18</td>
+    </tr>
+    <tr>
+      <th>21</th>
+      <td>1338.0</td>
+      <td>ml optimization using cognitive assistant</td>
+      <td>19</td>
+    </tr>
+    <tr>
+      <th>22</th>
+      <td>1320.0</td>
+      <td>housing (2015): united states demographic meas...</td>
+      <td>20</td>
+    </tr>
+    <tr>
+      <th>23</th>
+      <td>1052.0</td>
+      <td>access db2 warehouse on cloud and db2 with python</td>
+      <td>14</td>
+    </tr>
+    <tr>
+      <th>24</th>
+      <td>1432.0</td>
+      <td>visualize data with the matplotlib library</td>
+      <td>18</td>
+    </tr>
+    <tr>
+      <th>25</th>
+      <td>1393.0</td>
+      <td>the nurse assignment problem</td>
+      <td>21</td>
+    </tr>
+    <tr>
+      <th>26</th>
+      <td>1338.0</td>
+      <td>ml optimization using cognitive assistant</td>
+      <td>6</td>
+    </tr>
+    <tr>
+      <th>27</th>
+      <td>593.0</td>
+      <td>upload files to ibm data science experience us...</td>
+      <td>22</td>
+    </tr>
+    <tr>
+      <th>28</th>
+      <td>362.0</td>
+      <td>dsx: hybrid mode</td>
+      <td>23</td>
+    </tr>
+    <tr>
+      <th>29</th>
+      <td>1364.0</td>
+      <td>predicting churn with the spss random tree alg...</td>
+      <td>24</td>
+    </tr>
+    <tr>
+      <th>...</th>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+    </tr>
+    <tr>
+      <th>45963</th>
+      <td>1360.0</td>
+      <td>pixieapp for outlier detection</td>
+      <td>5143</td>
+    </tr>
+    <tr>
+      <th>45964</th>
+      <td>291.0</td>
+      <td>a guide to receptive field arithmetic for conv...</td>
+      <td>5143</td>
+    </tr>
+    <tr>
+      <th>45965</th>
+      <td>1430.0</td>
+      <td>using pixiedust for fast, flexible, and easier...</td>
+      <td>5143</td>
+    </tr>
+    <tr>
+      <th>45966</th>
+      <td>1400.0</td>
+      <td>uci ml repository: chronic kidney disease data...</td>
+      <td>5143</td>
+    </tr>
+    <tr>
+      <th>45967</th>
+      <td>495.0</td>
+      <td>top 10 machine learning algorithms for beginners</td>
+      <td>5143</td>
+    </tr>
+    <tr>
+      <th>45968</th>
+      <td>202.0</td>
+      <td>analyze open data sets using pandas in a pytho...</td>
+      <td>5143</td>
+    </tr>
+    <tr>
+      <th>45969</th>
+      <td>1400.0</td>
+      <td>uci ml repository: chronic kidney disease data...</td>
+      <td>5143</td>
+    </tr>
+    <tr>
+      <th>45970</th>
+      <td>485.0</td>
+      <td>a moving average trading strategy</td>
+      <td>5143</td>
+    </tr>
+    <tr>
+      <th>45971</th>
+      <td>1400.0</td>
+      <td>uci ml repository: chronic kidney disease data...</td>
+      <td>5143</td>
+    </tr>
+    <tr>
+      <th>45972</th>
+      <td>588.0</td>
+      <td>tidyr 0.6.0</td>
+      <td>5143</td>
+    </tr>
+    <tr>
+      <th>45973</th>
+      <td>1398.0</td>
+      <td>total population by country</td>
+      <td>5143</td>
+    </tr>
+    <tr>
+      <th>45974</th>
+      <td>270.0</td>
+      <td>learning statistics on youtube</td>
+      <td>5144</td>
+    </tr>
+    <tr>
+      <th>45975</th>
+      <td>1165.0</td>
+      <td>analyze precipitation data</td>
+      <td>5145</td>
+    </tr>
+    <tr>
+      <th>45976</th>
+      <td>20.0</td>
+      <td>working interactively with rstudio and noteboo...</td>
+      <td>5145</td>
+    </tr>
+    <tr>
+      <th>45977</th>
+      <td>1305.0</td>
+      <td>gosales transactions for naive bayes model</td>
+      <td>5145</td>
+    </tr>
+    <tr>
+      <th>45978</th>
+      <td>962.0</td>
+      <td>data visualization with r: scrum metrics</td>
+      <td>5145</td>
+    </tr>
+    <tr>
+      <th>45979</th>
+      <td>962.0</td>
+      <td>data visualization with r: scrum metrics</td>
+      <td>5145</td>
+    </tr>
+    <tr>
+      <th>45980</th>
+      <td>138.0</td>
+      <td>best packages for data manipulation in r</td>
+      <td>5145</td>
+    </tr>
+    <tr>
+      <th>45981</th>
+      <td>1324.0</td>
+      <td>ibm watson facebook posts for 2015</td>
+      <td>5146</td>
+    </tr>
+    <tr>
+      <th>45982</th>
+      <td>1324.0</td>
+      <td>ibm watson facebook posts for 2015</td>
+      <td>5146</td>
+    </tr>
+    <tr>
+      <th>45983</th>
+      <td>1157.0</td>
+      <td>airbnb data for analytics: washington d.c. lis...</td>
+      <td>5146</td>
+    </tr>
+    <tr>
+      <th>45984</th>
+      <td>1416.0</td>
+      <td>united states demographic measures: population...</td>
+      <td>5146</td>
+    </tr>
+    <tr>
+      <th>45985</th>
+      <td>1394.0</td>
+      <td>the nurse assignment problem data</td>
+      <td>5146</td>
+    </tr>
+    <tr>
+      <th>45986</th>
+      <td>1125.0</td>
+      <td>airbnb data for analytics: portland reviews</td>
+      <td>5146</td>
+    </tr>
+    <tr>
+      <th>45987</th>
+      <td>1282.0</td>
+      <td>employed population by occupation and age</td>
+      <td>5146</td>
+    </tr>
+    <tr>
+      <th>45988</th>
+      <td>1324.0</td>
+      <td>ibm watson facebook posts for 2015</td>
+      <td>5146</td>
+    </tr>
+    <tr>
+      <th>45989</th>
+      <td>142.0</td>
+      <td>neural networks for beginners: popular types a...</td>
+      <td>5146</td>
+    </tr>
+    <tr>
+      <th>45990</th>
+      <td>233.0</td>
+      <td>bayesian nonparametric models – stats and bots</td>
+      <td>5147</td>
+    </tr>
+    <tr>
+      <th>45991</th>
+      <td>1160.0</td>
+      <td>analyze accident reports on amazon emr spark</td>
+      <td>5148</td>
+    </tr>
+    <tr>
+      <th>45992</th>
+      <td>16.0</td>
+      <td>higher-order logistic regression for large dat...</td>
+      <td>5149</td>
+    </tr>
+  </tbody>
+</table>
+<p>45993 rows × 3 columns</p>
+</div>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[177]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">get_top_sorted_users</span><span class="p">(</span><span class="n">user_id</span><span class="p">,</span> <span class="n">df</span><span class="o">=</span><span class="n">df</span><span class="p">,</span> <span class="n">user_item</span><span class="o">=</span><span class="n">user_item</span><span class="p">):</span>
@@ -16095,7 +16832,7 @@ The 3 most similar users to user 46 are: [4201, 23, 3782]
     <span class="n">num_interactions_df</span> <span class="o">=</span> <span class="n">df</span><span class="o">.</span><span class="n">user_id</span><span class="o">.</span><span class="n">value_counts</span><span class="p">()</span><span class="o">.</span><span class="n">to_frame</span><span class="p">(</span><span class="s1">&#39;num_interactions&#39;</span><span class="p">)</span>    
     <span class="n">neighbors_df</span> <span class="o">=</span> <span class="n">similarity_df</span><span class="o">.</span><span class="n">merge</span><span class="p">(</span><span class="n">num_interactions_df</span><span class="p">,</span> <span class="n">left_on</span><span class="o">=</span><span class="s1">&#39;user_id&#39;</span><span class="p">,</span> <span class="n">right_index</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span><span class="o">.</span><span class="n">rename</span><span class="p">(</span><span class="n">columns</span><span class="o">=</span><span class="p">{</span><span class="s1">&#39;user_id&#39;</span><span class="p">:</span><span class="s1">&#39;neighbor_id&#39;</span><span class="p">})</span>
     <span class="n">neighbors_df</span> <span class="o">=</span> <span class="n">neighbors_df</span><span class="o">.</span><span class="n">sort_values</span><span class="p">(</span><span class="n">by</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;similarity&#39;</span><span class="p">,</span> <span class="s1">&#39;num_interactions&#39;</span><span class="p">],</span> <span class="n">ascending</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
-    <span class="nb">print</span><span class="p">(</span><span class="n">neighbors_df</span><span class="o">.</span><span class="n">head</span><span class="p">())</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">neighbors_df</span><span class="o">.</span><span class="n">head</span><span class="p">(</span><span class="mi">10</span><span class="p">))</span>
     <span class="k">return</span> <span class="n">neighbors_df</span> <span class="c1"># Return the dataframe specified in the doc_string</span>
 
 
@@ -16123,289 +16860,25 @@ The 3 most similar users to user 46 are: [4201, 23, 3782]
 <span class="sd">   </span>
 <span class="sd">    &#39;&#39;&#39;</span>
     <span class="c1"># Your code here</span>
-    <span class="n">neighbors_df</span> <span class="o">=</span> <span class="n">get_top_sorted_users</span><span class="p">(</span><span class="n">user_id</span><span class="p">)</span>
     
-    <span class="c1"># set top-m neighbor_id</span>
-    <span class="n">top_m_neighbors</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="n">neighbors_df</span><span class="p">[:</span><span class="n">m</span><span class="p">][</span><span class="s1">&#39;neighbor_id&#39;</span><span class="p">])</span>
-
-    <span class="c1"># set article_ids seen by top-m neighbors</span>
-    <span class="n">recs</span> <span class="o">=</span> <span class="p">[]</span>
-    <span class="k">for</span> <span class="n">uid</span> <span class="ow">in</span> <span class="n">top_m_neighbors</span><span class="p">:</span>
-        <span class="n">article_ids</span> <span class="o">=</span> <span class="n">user_item</span><span class="o">.</span><span class="n">loc</span><span class="p">[</span><span class="n">uid</span><span class="p">]</span>
-        <span class="n">recs</span><span class="o">.</span><span class="n">extend</span><span class="p">([</span><span class="nb">str</span><span class="p">(</span><span class="n">aid</span><span class="p">)</span> <span class="k">for</span> <span class="n">aid</span> <span class="ow">in</span> <span class="n">article_ids</span><span class="p">[</span><span class="n">article_ids</span> <span class="o">==</span> <span class="mi">1</span><span class="p">]</span><span class="o">.</span><span class="n">index</span><span class="p">])</span>
-
-    <span class="c1"># remove duplicate</span>
-    <span class="n">recs</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="nb">set</span><span class="p">(</span><span class="n">recs</span><span class="p">[:</span><span class="n">m</span><span class="p">]))</span>
-
-    <span class="c1"># set article names and remove duplicate</span>
-    <span class="n">rec_names</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="nb">set</span><span class="p">(</span><span class="n">df</span><span class="p">[</span><span class="n">df</span><span class="p">[</span><span class="s1">&#39;article_id&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">isin</span><span class="p">(</span><span class="n">recs</span><span class="p">)][</span><span class="s1">&#39;title&#39;</span><span class="p">]))</span>    
-    <span class="k">return</span> <span class="n">recs</span><span class="p">,</span> <span class="n">rec_names</span>
-</pre></div>
-
-    </div>
-</div>
-</div>
-
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[104]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Quick spot check - don&#39;t change this code - just use it to test your functions</span>
-<span class="n">rec_ids</span><span class="p">,</span> <span class="n">rec_names</span> <span class="o">=</span> <span class="n">user_user_recs_part2</span><span class="p">(</span><span class="mi">20</span><span class="p">,</span> <span class="mi">10</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;The top 10 recommendations for user 20 are the following article ids:&quot;</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">rec_ids</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">()</span>
-<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;The top 10 recommendations for user 20 are the following article names:&quot;</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">rec_names</span><span class="p">)</span>
-</pre></div>
-
-    </div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area">
-
-    <div class="prompt"></div>
-
-
-<div class="output_subarea output_stream output_stdout output_text">
-<pre>    neighbor_id  similarity  num_interactions
-13          170           2               116
-12         3169           2               114
-9           204           2                97
-15         5138           2                95
-0            40           2                78
-The top 10 recommendations for user 20 are the following article ids:
-[&#39;302.0&#39;, &#39;164.0&#39;, &#39;232.0&#39;, &#39;12.0&#39;, &#39;142.0&#39;, &#39;336.0&#39;, &#39;362.0&#39;, &#39;125.0&#39;, &#39;109.0&#39;, &#39;205.0&#39;]
-
-The top 10 recommendations for user 20 are the following article names:
-[&#39;timeseries data analysis of iot events by using jupyter notebook&#39;, &#39;self-service data preparation with ibm data refinery&#39;, &#39;neural networks for beginners: popular types and applications&#39;, &#39;tensorflow quick tips&#39;, &#39;dsx: hybrid mode&#39;, &#39;statistics for hackers&#39;, &#39;challenges in deep learning&#39;, &#39;learn tensorflow and deep learning together and now!&#39;, &#34;a beginner&#39;s guide to variational methods&#34;, &#39;accelerate your workflow with dsx&#39;]
-</pre>
-</div>
-</div>
-
-</div>
-</div>
-
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[105]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">get_top_sorted_users</span><span class="p">(</span><span class="n">user_id</span><span class="p">,</span> <span class="n">df</span><span class="o">=</span><span class="n">df</span><span class="p">,</span> <span class="n">user_item</span><span class="o">=</span><span class="n">user_item</span><span class="p">):</span>
-    <span class="sd">&#39;&#39;&#39;</span>
-<span class="sd">    INPUT:</span>
-<span class="sd">    user_id - (int)</span>
-<span class="sd">    df - (pandas dataframe) df as defined at the top of the notebook </span>
-<span class="sd">    user_item - (pandas dataframe) matrix of users by articles: </span>
-<span class="sd">            1&#39;s when a user has interacted with an article, 0 otherwise</span>
-<span class="sd">    </span>
-<span class="sd">            </span>
-<span class="sd">    OUTPUT:</span>
-<span class="sd">    neighbors_df - (pandas dataframe) a dataframe with:</span>
-<span class="sd">                    neighbor_id - is a neighbor user_id</span>
-<span class="sd">                    similarity - measure of the similarity of each user to the provided user_id</span>
-<span class="sd">                    num_interactions - the number of articles viewed by the user - if a u</span>
-<span class="sd">                    </span>
-<span class="sd">    Other Details - sort the neighbors_df by the similarity and then by number of interactions where </span>
-<span class="sd">                    highest of each is higher in the dataframe</span>
-<span class="sd">     </span>
-<span class="sd">    &#39;&#39;&#39;</span>
-    <span class="c1"># Your code here</span>
-    <span class="n">user_interactions</span> <span class="o">=</span> <span class="n">df</span><span class="o">.</span><span class="n">groupby</span><span class="p">([</span><span class="s1">&#39;user_id&#39;</span><span class="p">])[</span><span class="s1">&#39;article_id&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">count</span><span class="p">()</span>
-
-    <span class="c1"># compute similarity of each user to the provided user</span>
-    <span class="n">n_users</span> <span class="o">=</span> <span class="n">user_item</span><span class="o">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
     
-    <span class="c1"># columns</span>
-    <span class="n">neighbor_id</span> <span class="o">=</span> <span class="p">[</span><span class="n">uid</span> <span class="k">for</span> <span class="n">uid</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="n">n_users</span><span class="p">)</span> <span class="k">if</span> <span class="n">uid</span> <span class="o">!=</span> <span class="n">user_id</span><span class="p">]</span>
-    <span class="n">similarity</span> <span class="o">=</span> <span class="p">[]</span>
-    <span class="n">num_interactions</span> <span class="o">=</span> <span class="p">[]</span>
+<span class="c1">#     neighbors_df = get_top_sorted_users(user_id)</span>
     
-    <span class="c1"># set similarity and num_interactions</span>
-    <span class="k">for</span> <span class="n">uid</span> <span class="ow">in</span> <span class="n">neighbor_id</span><span class="p">:</span>
-        <span class="n">similarity</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">dot</span><span class="p">(</span><span class="n">user_item</span><span class="o">.</span><span class="n">loc</span><span class="p">[</span><span class="n">user_id</span><span class="p">],</span> <span class="n">user_item</span><span class="o">.</span><span class="n">loc</span><span class="p">[</span><span class="n">uid</span><span class="p">]))</span>
-        <span class="n">num_interactions</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">user_interactions</span><span class="o">.</span><span class="n">loc</span><span class="p">[</span><span class="n">uid</span><span class="p">])</span>
-        
-    <span class="c1"># create dataframe</span>
-    <span class="n">neighbors_df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">({</span>
-        <span class="s1">&#39;neighbor_id&#39;</span><span class="p">:</span> <span class="n">neighbor_id</span><span class="p">,</span>
-        <span class="s1">&#39;similarity&#39;</span><span class="p">:</span> <span class="n">similarity</span><span class="p">,</span>
-        <span class="s1">&#39;num_interactions&#39;</span><span class="p">:</span> <span class="n">num_interactions</span>
-    <span class="p">})</span>
-    
-    <span class="c1"># sort dataframe by similarity</span>
-    <span class="n">neighbors_df</span><span class="o">.</span><span class="n">sort_values</span><span class="p">(</span><span class="s1">&#39;similarity&#39;</span><span class="p">,</span> <span class="n">ascending</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span> <span class="n">inplace</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
-    
-    <span class="nb">print</span><span class="p">(</span><span class="n">neighbors_df</span><span class="o">.</span><span class="n">head</span><span class="p">())</span>
-    <span class="k">return</span> <span class="n">neighbors_df</span> <span class="c1"># Return the dataframe specified in the doc_string</span>
+<span class="c1">#     # set top-m neighbor_id</span>
+<span class="c1">#     top_m_neighbors = list(neighbors_df[:m][&#39;neighbor_id&#39;])</span>
 
+<span class="c1">#     # set article_ids seen by top-m neighbors</span>
+<span class="c1">#     recs = []</span>
+<span class="c1">#     for uid in top_m_neighbors:</span>
+<span class="c1">#         article_ids = user_item.loc[uid]</span>
+<span class="c1">#         recs.extend([str(aid) for aid in article_ids[article_ids == 1].index])</span>
 
-<span class="k">def</span> <span class="nf">user_user_recs_part2</span><span class="p">(</span><span class="n">user_id</span><span class="p">,</span> <span class="n">m</span><span class="o">=</span><span class="mi">10</span><span class="p">):</span>
-    <span class="sd">&#39;&#39;&#39;</span>
-<span class="sd">    INPUT:</span>
-<span class="sd">    user_id - (int) a user id</span>
-<span class="sd">    m - (int) the number of recommendations you want for the user</span>
-<span class="sd">    </span>
-<span class="sd">    OUTPUT:</span>
-<span class="sd">    recs - (list) a list of recommendations for the user by article id</span>
-<span class="sd">    rec_names - (list) a list of recommendations for the user by article title</span>
-<span class="sd">    </span>
-<span class="sd">    Description:</span>
-<span class="sd">    Loops through the users based on closeness to the input user_id</span>
-<span class="sd">    For each user - finds articles the user hasn&#39;t seen before and provides them as recs</span>
-<span class="sd">    Does this until m recommendations are found</span>
-<span class="sd">    </span>
-<span class="sd">    Notes:</span>
-<span class="sd">    * Choose the users that have the most total article interactions </span>
-<span class="sd">    before choosing those with fewer article interactions.</span>
+<span class="c1">#     # remove duplicate</span>
+<span class="c1">#     recs = list(set(recs[:m]))</span>
 
-<span class="sd">    * Choose articles with the articles with the most total interactions </span>
-<span class="sd">    before choosing those with fewer total interactions. </span>
-<span class="sd">   </span>
-<span class="sd">    &#39;&#39;&#39;</span>
-    <span class="c1"># Your code here</span>
-    <span class="n">neighbors_df</span> <span class="o">=</span> <span class="n">get_top_sorted_users</span><span class="p">(</span><span class="n">user_id</span><span class="p">)</span>
-    
-    <span class="c1"># set top-m neighbor_id</span>
-    <span class="n">top_m_neighbors</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="n">neighbors_df</span><span class="p">[:</span><span class="n">m</span><span class="p">][</span><span class="s1">&#39;neighbor_id&#39;</span><span class="p">])</span>
+<span class="c1">#     # set article names and remove duplicate</span>
+<span class="c1">#     rec_names = list(set(df[df[&#39;article_id&#39;].isin(recs)][&#39;title&#39;]))    </span>
 
-    <span class="c1"># set article_ids seen by top-m neighbors</span>
-    <span class="n">recs</span> <span class="o">=</span> <span class="p">[]</span>
-    <span class="k">for</span> <span class="n">uid</span> <span class="ow">in</span> <span class="n">top_m_neighbors</span><span class="p">:</span>
-        <span class="n">article_ids</span> <span class="o">=</span> <span class="n">user_item</span><span class="o">.</span><span class="n">loc</span><span class="p">[</span><span class="n">uid</span><span class="p">]</span>
-        <span class="n">recs</span><span class="o">.</span><span class="n">extend</span><span class="p">([</span><span class="nb">str</span><span class="p">(</span><span class="n">aid</span><span class="p">)</span> <span class="k">for</span> <span class="n">aid</span> <span class="ow">in</span> <span class="n">article_ids</span><span class="p">[</span><span class="n">article_ids</span> <span class="o">==</span> <span class="mi">1</span><span class="p">]</span><span class="o">.</span><span class="n">index</span><span class="p">])</span>
-
-    <span class="c1"># remove duplicate</span>
-    <span class="n">recs</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="nb">set</span><span class="p">(</span><span class="n">recs</span><span class="p">[:</span><span class="n">m</span><span class="p">]))</span>
-
-    <span class="c1"># set article names and remove duplicate</span>
-    <span class="n">rec_names</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="nb">set</span><span class="p">(</span><span class="n">df</span><span class="p">[</span><span class="n">df</span><span class="p">[</span><span class="s1">&#39;article_id&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">isin</span><span class="p">(</span><span class="n">recs</span><span class="p">)][</span><span class="s1">&#39;title&#39;</span><span class="p">]))</span>
-
-    <span class="k">return</span> <span class="n">recs</span><span class="p">,</span> <span class="n">rec_names</span>
-</pre></div>
-
-    </div>
-</div>
-</div>
-
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[106]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Quick spot check - don&#39;t change this code - just use it to test your functions</span>
-<span class="n">rec_ids</span><span class="p">,</span> <span class="n">rec_names</span> <span class="o">=</span> <span class="n">user_user_recs_part2</span><span class="p">(</span><span class="mi">20</span><span class="p">,</span> <span class="mi">10</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;The top 10 recommendations for user 20 are the following article ids:&quot;</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">rec_ids</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">()</span>
-<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;The top 10 recommendations for user 20 are the following article names:&quot;</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">rec_names</span><span class="p">)</span>
-</pre></div>
-
-    </div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area">
-
-    <div class="prompt"></div>
-
-
-<div class="output_subarea output_stream output_stdout output_text">
-<pre>      neighbor_id  similarity  num_interactions
-4296         4298           2                15
-5136         5138           2                95
-202           204           2                97
-2162         2164           2                 8
-2930         2932           2                 7
-The top 10 recommendations for user 20 are the following article ids:
-[&#39;727.0&#39;, &#39;1186.0&#39;, &#39;1053.0&#39;, &#39;232.0&#39;, &#39;53.0&#39;, &#39;495.0&#39;, &#39;981.0&#39;, &#39;1271.0&#39;, &#39;89.0&#39;, &#39;793.0&#39;]
-
-The top 10 recommendations for user 20 are the following article names:
-[&#39;introducing streams designer&#39;, &#39;from python nested lists to multidimensional numpy arrays&#39;, &#39;10 powerful features on watson data platform, no coding necessary&#39;, &#39;top 20 r machine learning and data science packages&#39;, &#39;self-service data preparation with ibm data refinery&#39;, &#39;customer demographics and sales&#39;, &#39;access mysql with python&#39;, &#39;top 10 machine learning algorithms for beginners&#39;, &#39;connect to db2 warehouse on cloud and db2 using scala&#39;, &#39;super fast string matching in python&#39;]
-</pre>
-</div>
-</div>
-
-</div>
-</div>
-
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[109]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">get_top_sorted_users</span><span class="p">(</span><span class="n">user_id</span><span class="p">,</span> <span class="n">df</span><span class="o">=</span><span class="n">df</span><span class="p">,</span> <span class="n">user_item</span><span class="o">=</span><span class="n">user_item</span><span class="p">):</span>
-    <span class="sd">&#39;&#39;&#39;</span>
-<span class="sd">    INPUT:</span>
-<span class="sd">    user_id - (int)</span>
-<span class="sd">    df - (pandas dataframe) df as defined at the top of the notebook </span>
-<span class="sd">    user_item - (pandas dataframe) matrix of users by articles: </span>
-<span class="sd">            1&#39;s when a user has interacted with an article, 0 otherwise</span>
-<span class="sd">    </span>
-<span class="sd">            </span>
-<span class="sd">    OUTPUT:</span>
-<span class="sd">    neighbors_df - (pandas dataframe) a dataframe with:</span>
-<span class="sd">                    neighbor_id - is a neighbor user_id</span>
-<span class="sd">                    similarity - measure of the similarity of each user to the provided user_id</span>
-<span class="sd">                    num_interactions - the number of articles viewed by the user - if a u</span>
-<span class="sd">                    </span>
-<span class="sd">    Other Details - sort the neighbors_df by the similarity and then by number of interactions where </span>
-<span class="sd">                    highest of each is higher in the dataframe</span>
-<span class="sd">     </span>
-<span class="sd">    &#39;&#39;&#39;</span>
-    <span class="c1"># Your code here</span>
-    <span class="n">similarity</span> <span class="o">=</span> <span class="n">user_item</span><span class="o">.</span><span class="n">dot</span><span class="p">(</span><span class="n">user_item</span><span class="o">.</span><span class="n">loc</span><span class="p">[</span><span class="n">user_id</span><span class="p">])</span>
-    <span class="n">similarity_df</span> <span class="o">=</span> <span class="n">similarity</span><span class="o">.</span><span class="n">sort_values</span><span class="p">(</span><span class="n">ascending</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span><span class="o">.</span><span class="n">drop</span><span class="p">(</span><span class="n">user_id</span><span class="p">)</span><span class="o">.</span><span class="n">to_frame</span><span class="p">(</span><span class="n">name</span><span class="o">=</span><span class="s2">&quot;similarity&quot;</span><span class="p">)</span><span class="o">.</span><span class="n">reset_index</span><span class="p">()</span>
-    
-    <span class="n">num_interactions_df</span> <span class="o">=</span> <span class="n">df</span><span class="o">.</span><span class="n">user_id</span><span class="o">.</span><span class="n">value_counts</span><span class="p">()</span><span class="o">.</span><span class="n">to_frame</span><span class="p">(</span><span class="s1">&#39;num_interactions&#39;</span><span class="p">)</span>
-    
-    <span class="n">neighbors_df</span> <span class="o">=</span> <span class="n">similarity_df</span><span class="o">.</span><span class="n">merge</span><span class="p">(</span><span class="n">num_interactions_df</span><span class="p">,</span> <span class="n">left_on</span><span class="o">=</span><span class="s1">&#39;user_id&#39;</span><span class="p">,</span> <span class="n">right_index</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span><span class="o">.</span> \
-                                                                <span class="n">rename</span><span class="p">(</span><span class="n">columns</span><span class="o">=</span><span class="p">{</span><span class="s1">&#39;user_id&#39;</span><span class="p">:</span><span class="s1">&#39;neighbor_id&#39;</span><span class="p">})</span>
-    
-    <span class="n">neighbors_df</span> <span class="o">=</span> <span class="n">neighbors_df</span><span class="o">.</span><span class="n">sort_values</span><span class="p">(</span><span class="n">by</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;similarity&#39;</span><span class="p">,</span> <span class="s1">&#39;num_interactions&#39;</span><span class="p">],</span> <span class="n">ascending</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
-    <span class="nb">print</span><span class="p">(</span><span class="n">neighbors_df</span><span class="o">.</span><span class="n">head</span><span class="p">())</span>
-    <span class="k">return</span> <span class="n">neighbors_df</span> <span class="c1"># Return the dataframe specified in the doc_string</span>
-
-
-<span class="k">def</span> <span class="nf">user_user_recs_part2</span><span class="p">(</span><span class="n">user_id</span><span class="p">,</span> <span class="n">m</span><span class="o">=</span><span class="mi">10</span><span class="p">):</span>
-    <span class="sd">&#39;&#39;&#39;</span>
-<span class="sd">    INPUT:</span>
-<span class="sd">    user_id - (int) a user id</span>
-<span class="sd">    m - (int) the number of recommendations you want for the user</span>
-<span class="sd">    </span>
-<span class="sd">    OUTPUT:</span>
-<span class="sd">    recs - (list) a list of recommendations for the user by article id</span>
-<span class="sd">    rec_names - (list) a list of recommendations for the user by article title</span>
-<span class="sd">    </span>
-<span class="sd">    Description:</span>
-<span class="sd">    Loops through the users based on closeness to the input user_id</span>
-<span class="sd">    For each user - finds articles the user hasn&#39;t seen before and provides them as recs</span>
-<span class="sd">    Does this until m recommendations are found</span>
-<span class="sd">    </span>
-<span class="sd">    Notes:</span>
-<span class="sd">    * Choose the users that have the most total article interactions </span>
-<span class="sd">    before choosing those with fewer article interactions.</span>
-
-<span class="sd">    * Choose articles with the articles with the most total interactions </span>
-<span class="sd">    before choosing those with fewer total interactions. </span>
-<span class="sd">   </span>
-<span class="sd">    &#39;&#39;&#39;</span>
-    <span class="c1"># Your code here</span>
     <span class="k">try</span><span class="p">:</span>
         <span class="n">seen_ids</span><span class="p">,</span> <span class="n">_</span> <span class="o">=</span> <span class="n">get_user_articles</span><span class="p">(</span><span class="n">user_id</span><span class="p">)</span>
     <span class="k">except</span><span class="p">:</span>
@@ -16415,7 +16888,7 @@ The top 10 recommendations for user 20 are the following article names:
         <span class="k">return</span> <span class="n">recs</span><span class="p">,</span> <span class="n">rec_names</span>
     
     <span class="n">neighbours</span> <span class="o">=</span> <span class="n">get_top_sorted_users</span><span class="p">(</span><span class="n">user_id</span><span class="p">)</span><span class="o">.</span><span class="n">neighbor_id</span><span class="o">.</span><span class="n">values</span>
-    
+
     <span class="n">recs</span> <span class="o">=</span> <span class="nb">set</span><span class="p">()</span>
     
     <span class="k">for</span> <span class="n">neighbour</span> <span class="ow">in</span> <span class="n">neighbours</span><span class="p">:</span>
@@ -16425,6 +16898,9 @@ The top 10 recommendations for user 20 are the following article names:
         <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">recs</span><span class="p">)</span> <span class="o">&gt;=</span> <span class="n">m</span><span class="p">:</span>
             <span class="n">recs</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="n">recs</span><span class="p">)[</span><span class="mi">0</span><span class="p">:</span><span class="n">m</span><span class="p">]</span>
             <span class="k">break</span>
+    
+    <span class="nb">print</span><span class="p">()</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">recs</span><span class="p">[:</span><span class="mi">5</span><span class="p">])</span>
     
     <span class="n">rec_names</span> <span class="o">=</span> <span class="n">get_article_names</span><span class="p">(</span><span class="n">recs</span><span class="p">)</span>
     
@@ -16438,7 +16914,7 @@ The top 10 recommendations for user 20 are the following article names:
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[110]:</div>
+<div class="prompt input_prompt">In&nbsp;[178]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Quick spot check - don&#39;t change this code - just use it to test your functions</span>
@@ -16470,11 +16946,72 @@ The top 10 recommendations for user 20 are the following article names:
 9           204           2                97
 15         5138           2                95
 0            40           2                78
+2          4932           2                76
+1           113           2                68
+8          4883           2                67
+4           419           2                16
+5           196           2                15
+
+[&#39;109.0&#39;, &#39;1162.0&#39;, &#39;1336.0&#39;, &#39;1386.0&#39;, &#39;125.0&#39;]
 The top 10 recommendations for user 20 are the following article ids:
-[&#39;1151.0&#39;, &#39;1354.0&#39;, &#39;1329.0&#39;, &#39;1424.0&#39;, &#39;1154.0&#39;, &#39;1426.0&#39;, &#39;681.0&#39;, &#39;1296.0&#39;, &#39;1324.0&#39;, &#39;939.0&#39;]
+[&#39;109.0&#39;, &#39;1162.0&#39;, &#39;1336.0&#39;, &#39;1386.0&#39;, &#39;125.0&#39;, &#39;302.0&#39;, &#39;1172.0&#39;, &#39;1420.0&#39;, &#39;232.0&#39;, &#39;1351.0&#39;]
 
 The top 10 recommendations for user 20 are the following article names:
-[&#39;ingest data from message hub in a streams flow&#39;, &#39;airbnb data for analytics: venice listings&#39;, &#39;fortune 100 companies&#39;, &#39;ibm watson facebook posts for 2015&#39;, &#39;airbnb data for analytics: vienna listings&#39;, &#39;use spark for scala to load data and run sql queries&#39;, &#39;real-time sentiment analysis of twitter hashtags with spark (+ pixiedust)&#39;, &#39;use spark for python to load data and run sql queries&#39;, &#39;movie recommender system with spark machine learning&#39;, &#39;deep learning from scratch i: computational graphs&#39;]
+[&#39;analyze energy consumption in buildings&#39;, &#39;learn basics about notebooks and apache spark&#39;, &#39;apache spark lab, part 3: machine learning&#39;, &#39;model bike sharing data with spss&#39;, &#39;statistics for hackers&#39;, &#39;accelerate your workflow with dsx&#39;, &#39;small steps to tensorflow&#39;, &#39;use apache systemml and spark for machine learning&#39;, &#39;tensorflow quick tips&#39;, &#39;self-service data preparation with ibm data refinery&#39;]
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[179]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Quick spot check - don&#39;t change this code - just use it to test your functions</span>
+<span class="n">rec_ids</span><span class="p">,</span> <span class="n">rec_names</span> <span class="o">=</span> <span class="n">user_user_recs_part2</span><span class="p">(</span><span class="mi">20</span><span class="p">,</span> <span class="mi">10</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;The top 10 recommendations for user 20 are the following article ids:&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">rec_ids</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">()</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;The top 10 recommendations for user 20 are the following article names:&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">rec_names</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>    neighbor_id  similarity  num_interactions
+13          170           2               116
+12         3169           2               114
+9           204           2                97
+15         5138           2                95
+0            40           2                78
+2          4932           2                76
+1           113           2                68
+8          4883           2                67
+4           419           2                16
+5           196           2                15
+
+[&#39;109.0&#39;, &#39;1162.0&#39;, &#39;1336.0&#39;, &#39;1386.0&#39;, &#39;125.0&#39;]
+The top 10 recommendations for user 20 are the following article ids:
+[&#39;109.0&#39;, &#39;1162.0&#39;, &#39;1336.0&#39;, &#39;1386.0&#39;, &#39;125.0&#39;, &#39;302.0&#39;, &#39;1172.0&#39;, &#39;1420.0&#39;, &#39;232.0&#39;, &#39;1351.0&#39;]
+
+The top 10 recommendations for user 20 are the following article names:
+[&#39;analyze energy consumption in buildings&#39;, &#39;learn basics about notebooks and apache spark&#39;, &#39;apache spark lab, part 3: machine learning&#39;, &#39;model bike sharing data with spss&#39;, &#39;statistics for hackers&#39;, &#39;accelerate your workflow with dsx&#39;, &#39;small steps to tensorflow&#39;, &#39;use apache systemml and spark for machine learning&#39;, &#39;tensorflow quick tips&#39;, &#39;self-service data preparation with ibm data refinery&#39;]
 </pre>
 </div>
 </div>
@@ -16493,12 +17030,14 @@ The top 10 recommendations for user 20 are the following article names:
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[115]:</div>
+<div class="prompt input_prompt">In&nbsp;[180]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="n">get_top_sorted_users</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span><span class="o">.</span><span class="n">iloc</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span>
 <span class="nb">print</span><span class="p">()</span>
 <span class="nb">print</span><span class="p">(</span><span class="n">get_top_sorted_users</span><span class="p">(</span><span class="mi">131</span><span class="p">)</span><span class="o">.</span><span class="n">iloc</span><span class="p">[</span><span class="mi">9</span><span class="p">])</span>
+<span class="nb">print</span><span class="p">()</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">get_top_sorted_users</span><span class="p">(</span><span class="mi">20</span><span class="p">)</span><span class="o">.</span><span class="n">iloc</span><span class="p">[</span><span class="mi">9</span><span class="p">])</span>
 </pre></div>
 
     </div>
@@ -16515,12 +17054,17 @@ The top 10 recommendations for user 20 are the following article names:
 
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>   neighbor_id  similarity  num_interactions
-0         3933          35                45
-1           23          17               364
-2         3782          17               363
-3          203          15               160
-4         4459          15               158
+<pre>    neighbor_id  similarity  num_interactions
+0          3933          35                45
+1            23          17               364
+2          3782          17               363
+3           203          15               160
+4          4459          15               158
+5           131          14               145
+6          3870          14               144
+7            46          13                63
+8          4201          13                61
+10           49          12               147
 neighbor_id         3933
 similarity            35
 num_interactions      45
@@ -16532,10 +17076,31 @@ Name: 0, dtype: int64
 2           23          38               364
 4          203          33               160
 3         4459          33               158
+5           98          29               170
+6         3764          29               169
+8           49          29               147
+7         3697          29               145
+9          242          25               148
 neighbor_id         242
 similarity           25
 num_interactions    148
 Name: 9, dtype: int64
+
+    neighbor_id  similarity  num_interactions
+13          170           2               116
+12         3169           2               114
+9           204           2                97
+15         5138           2                95
+0            40           2                78
+2          4932           2                76
+1           113           2                68
+8          4883           2                67
+4           419           2                16
+5           196           2                15
+neighbor_id         196
+similarity            2
+num_interactions     15
+Name: 5, dtype: int64
 </pre>
 </div>
 </div>
@@ -16546,7 +17111,7 @@ Name: 9, dtype: int64
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[116]:</div>
+<div class="prompt input_prompt">In&nbsp;[181]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1">### Tests with a dictionary of results</span>
@@ -16562,7 +17127,7 @@ Name: 9, dtype: int64
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[117]:</div>
+<div class="prompt input_prompt">In&nbsp;[182]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1">## Dictionary Test Here</span>
@@ -16609,6 +17174,8 @@ Name: 9, dtype: int64
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p><strong>Provide your response here.</strong></p>
+<p>This is a <strong>cold start problem</strong> as we learned in class. There are no new users because we have already used item matrices on the ranking basis. We will have to create a matrix again when new users appear so that we can recommend them.</p>
+<p>It would be necessary to use <code>content-based</code> recommendation methods to measure distances such as <code>Eucladians</code>, or to use <code>PCA</code> to find similarities.</p>
 
 </div>
 </div>
@@ -16623,7 +17190,7 @@ Name: 9, dtype: int64
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[118]:</div>
+<div class="prompt input_prompt">In&nbsp;[183]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">new_user</span> <span class="o">=</span> <span class="s1">&#39;0.0&#39;</span>
@@ -16682,7 +17249,7 @@ Name: 9, dtype: int64
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[129]:</div>
+<div class="prompt input_prompt">In&nbsp;[184]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">sklearn.feature_extraction.text</span> <span class="k">import</span> <span class="n">CountVectorizer</span><span class="p">,</span> <span class="n">TfidfTransformer</span>
@@ -16798,11 +17365,11 @@ Name: 9, dtype: int64
 
 <div class="output_subarea output_stream output_stdout output_text">
 <pre>[nltk_data] Downloading package punkt to /root/nltk_data...
-[nltk_data]   Package punkt is already up-to-date!
+[nltk_data]   Unzipping tokenizers/punkt.zip.
 [nltk_data] Downloading package wordnet to /root/nltk_data...
-[nltk_data]   Package wordnet is already up-to-date!
+[nltk_data]   Unzipping corpora/wordnet.zip.
 [nltk_data] Downloading package stopwords to /root/nltk_data...
-[nltk_data]   Package stopwords is already up-to-date!
+[nltk_data]   Unzipping corpora/stopwords.zip.
 </pre>
 </div>
 </div>
@@ -16813,7 +17380,7 @@ Name: 9, dtype: int64
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[130]:</div>
+<div class="prompt input_prompt">In&nbsp;[185]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># drop duplicate article_id and get tiles</span>
@@ -16866,7 +17433,7 @@ Name: 9, dtype: int64
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[131]:</div>
+<div class="prompt input_prompt">In&nbsp;[186]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># make recommendations for a brand new user</span>
@@ -16897,7 +17464,7 @@ Name: 9, dtype: int64
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[131]:</div>
+    <div class="prompt output_prompt">Out[186]:</div>
 
 
 
@@ -16923,7 +17490,7 @@ Name: 9, dtype: int64
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[132]:</div>
+<div class="prompt input_prompt">In&nbsp;[187]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Load the matrix here</span>
@@ -16937,7 +17504,7 @@ Name: 9, dtype: int64
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[133]:</div>
+<div class="prompt input_prompt">In&nbsp;[188]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># quick look at the matrix</span>
@@ -16954,7 +17521,7 @@ Name: 9, dtype: int64
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[133]:</div>
+    <div class="prompt output_prompt">Out[188]:</div>
 
 
 
@@ -17167,7 +17734,7 @@ Name: 9, dtype: int64
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[134]:</div>
+<div class="prompt input_prompt">In&nbsp;[189]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Perform SVD on the User-Item Matrix Here</span>
@@ -17180,10 +17747,58 @@ Name: 9, dtype: int64
 </div>
 
 </div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[193]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">u</span>
+<span class="n">s</span>
+<span class="n">vt</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt output_prompt">Out[193]:</div>
+
+
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>array([[ -2.21822365e-03,  -1.13697491e-03,  -8.25820256e-03, ...,
+         -7.89214713e-03,  -2.78398235e-02,  -3.49679488e-04],
+       [  2.07736845e-03,   3.86642452e-04,   1.51981454e-03, ...,
+         -1.56120895e-02,   9.70825293e-04,  -4.30034249e-04],
+       [ -4.32111291e-04,   2.46676561e-03,   4.28288891e-03, ...,
+          1.20613591e-02,   1.21832171e-02,   1.08416259e-03],
+       ..., 
+       [  0.00000000e+00,   3.15631941e-16,   1.84475856e-16, ...,
+          5.48706963e-17,   9.44710455e-17,   1.23662293e-16],
+       [  0.00000000e+00,  -2.38531913e-16,   2.65894675e-18, ...,
+          1.71338757e-16,   7.09063975e-17,  -1.89755859e-16],
+       [  0.00000000e+00,   2.26402240e-17,   3.39637767e-16, ...,
+         -7.85447059e-17,  -6.56620070e-17,  -9.63564231e-17]])</pre>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p><strong>Provide your response here.</strong></p>
+<p><strong>SVD</strong> is available in this situation. The reason is that there is no missing value. Because there is <code>no empty array</code> or <code>1/0 interactions</code>, <strong>SVD</strong> can be continued and, of course, <strong>SVD</strong> of numpy is possible.</p>
 
 </div>
 </div>
@@ -17198,7 +17813,7 @@ Name: 9, dtype: int64
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[135]:</div>
+<div class="prompt input_prompt">In&nbsp;[194]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">num_latent_feats</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">arange</span><span class="p">(</span><span class="mi">10</span><span class="p">,</span><span class="mi">700</span><span class="o">+</span><span class="mi">10</span><span class="p">,</span><span class="mi">20</span><span class="p">)</span>
@@ -17269,7 +17884,7 @@ Name: 9, dtype: int64
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[136]:</div>
+<div class="prompt input_prompt">In&nbsp;[195]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">df_train</span> <span class="o">=</span> <span class="n">df</span><span class="o">.</span><span class="n">head</span><span class="p">(</span><span class="mi">40000</span><span class="p">)</span>
@@ -17308,7 +17923,7 @@ Name: 9, dtype: int64
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[137]:</div>
+<div class="prompt input_prompt">In&nbsp;[196]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="nb">set</span><span class="p">(</span><span class="n">user_item_test</span><span class="o">.</span><span class="n">index</span><span class="p">)</span> <span class="o">&amp;</span> <span class="nb">set</span><span class="p">(</span><span class="n">user_item_train</span><span class="o">.</span><span class="n">index</span><span class="p">)))</span>
@@ -17345,7 +17960,7 @@ Name: 9, dtype: int64
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[139]:</div>
+<div class="prompt input_prompt">In&nbsp;[197]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Replace the values in the dictionary below</span>
@@ -17399,7 +18014,7 @@ Name: 9, dtype: int64
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[140]:</div>
+<div class="prompt input_prompt">In&nbsp;[198]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># fit SVD on the user_item_train matrix</span>
@@ -17417,7 +18032,7 @@ Name: 9, dtype: int64
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[140]:</div>
+    <div class="prompt output_prompt">Out[198]:</div>
 
 
 
@@ -17434,7 +18049,7 @@ Name: 9, dtype: int64
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[142]:</div>
+<div class="prompt input_prompt">In&nbsp;[199]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Use these cells to see how well you can use the training </span>
@@ -17454,7 +18069,7 @@ Name: 9, dtype: int64
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[142]:</div>
+    <div class="prompt output_prompt">Out[199]:</div>
 
 
 
@@ -17471,7 +18086,7 @@ Name: 9, dtype: int64
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[145]:</div>
+<div class="prompt input_prompt">In&nbsp;[200]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">sklearn.metrics</span> <span class="k">import</span> <span class="n">f1_score</span>
@@ -17517,7 +18132,7 @@ Name: 9, dtype: int64
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[146]:</div>
+<div class="prompt input_prompt">In&nbsp;[201]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">fig</span><span class="p">,</span> <span class="n">ax1</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">subplots</span><span class="p">()</span>
@@ -17570,7 +18185,7 @@ Name: 9, dtype: int64
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[147]:</div>
+<div class="prompt input_prompt">In&nbsp;[202]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">fig</span><span class="p">,</span> <span class="n">ax1</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">subplots</span><span class="p">()</span>
@@ -17717,6 +18332,19 @@ Name: 9, dtype: int64
 
 </div>
 </div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span> 
+</pre></div>
+
+    </div>
+</div>
+</div>
+
 </div>
     </div>
   </div>
